@@ -1,0 +1,12 @@
+url: http://hashtaggeeks.com
+baseurl: /jekyll-website
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+exclude: 
+  - node_modules
+  - Makefile
+  - package.json
+  - package-lock.json
+  - Readme.txt

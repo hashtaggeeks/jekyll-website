@@ -1,0 +1,40 @@
+{
+   "topics":[
+      {
+         "header":"How To Install Anaconda Python",
+         "url":"/pages/how-to-install-anaconda-python.html",
+         "image-url":"/images/anaconda.jpg",
+          "alt-img":"anaconda-python",
+         "content":["Designed for data science and machine learning workflows, 
+            <a href='https://www.anaconda.com' target='_blank'>Anaconda</a> is an open-source package manager, environment manager, 
+            and distribution of the <a href='https://www.python.org/' target='_blank'>Python</a> and <a href='https://www.r-project.org/' target='_blank'>R</a> programming languages.",
+            "It includes:
+            <ul><li>The core python language</li>
+            <li>100+ <a href='https://www.python.org/' target='_blank'>python</a> 'packages' (libraries)</li>
+            <li><a href='https://www.spyder-ide.org/' target='_blank'>Spyder</a> (IDE/editor - like <a href='https://www.jetbrains.com/pycharm/' target='_blank'>pycharm</a>) and <a href='https://jupyter.org/' target='_blank'>Jupyter</a></li>
+            <li><a href='https://docs.conda.io/en/latest/' target='_blank'>conda</a>, Anaconda's own package manager, used for updating <a href='https://www.anaconda.com' target='_blank'>Anaconda</a> and packages</li></ul>"
+         ]
+      },
+      {
+        "header":"Create Pandas dataframe",
+        "url":"/pages/how-to-create-pandas-dataframe.html",
+        "image-url":"/images/pandas.jpg",
+        "alt-img":"Pandas dataframe",
+         "content":["Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). 
+          Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects",
+          "A pandas DataFrame can be created using various inputs like List, dict, Series, Numpy ndarray or another dataframe"
+         ]
+      },
+      {
+        "header":"Pandas dataframe index",
+        "url":"/pages/pandas-dataframe-index.html",
+        "image-url":"/images/dataframe-index.png",
+        "alt-img":"Pandas dataframe index",
+         "content":["Dataframe index is the address to access rows. The default index created by the dataframe is RangeIndex of int64.",
+         "Index can be set during the dataframe creation or can be changed later using set_index or reset_index methods",
+         "Hierarchical / Multi-level indexing enables you to store and manipulate data with an arbitrary number of dimensions in lower dimensional data structures like Series (1d) and DataFrame (2d)."
+         ]
+      }
+
+   ]
+}
