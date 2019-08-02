@@ -8,7 +8,7 @@
     "deploy": "gh-pages -d _site"
   },
   "keywords": [],
-  "author": "",
+  "author": "hashtaggeeks",
   "license": "ISC",
   "homepage": "https://hashtaggeeks.github.io/jekyll-website",
   "dependencies": {
