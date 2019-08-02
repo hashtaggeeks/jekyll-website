@@ -1,0 +1,239 @@
+<html>
+    <head>
+        <title>
+            How To Install Anaconda Python 
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"
+        itemprop="description"
+        name="description"
+        content="download anaconda, install anaconda python in linux machines. anaconda installer, run jupyter notebook, verify anaconda installation."
+        >
+        <link rel="canonical" href="http://hashtaggeeks.com/pages/how-to-install-anaconda-python.html">
+
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="How To Install Anaconda Python">
+        <meta property="og:url" content="http://hashtaggeeks.com/pages/how-to-install-anaconda-python.html"> 
+        <meta property="og:site_name" content="Python Pandas Tutorial">
+        <meta property="article:publisher" content="https://hashtaggeeks.com" />
+        <meta property="article:author" content="https://hashtaggeeks.com" />
+        <meta property="article:published_time" content="" />
+        <meta property="og:description" content="download anaconda, install anaconda python in linux machines. anaconda installer, run jupyter notebook, verify anaconda installation.">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="How To Install Anaconda Python">
+        <meta name="twitter:description" content="download anaconda, install anaconda python in linux machines. anaconda installer, run jupyter notebook, verify anaconda installation.">
+        <meta name="twitter:site" content="@hashtaggeeks" />
+        <meta name="twitter:creator" content="@hashtaggeeks">
+        <!-- site css -->
+        <link rel="stylesheet" href="/jekyll-website/assets/main.css">
+        <link rel="stylesheet" href="/jekyll-website/assets/syntax-style.css">
+        <link rel="stylesheet" href="/jekyll-website/assets/vendor/bootstrap-toc.min.css"> 
+
+    </head>
+    <body class="pt-5" data-spy="scroll" data-target="#toc">
+        <main role="main">
+            <div class="container">
+                <header>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" role="navigation" >
+  <div class="container"> 
+    <a class="navbar-brand" href="/jekyll-website/">Python Pandas</a>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/jekyll-website/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a class="nav-link" href="/jekyll-website/pages/pandas.html">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/jekyll-website/about.html">About</a> 
+        </li>
+      -->
+      </ul>
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=http://hashtaggeeks.com/jekyll-website/pages/how-to-install-anaconda-python.html" 
+         class="nav-link"
+         onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+         ><i class="fa fa-facebook"></i></a></li>
+         <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=http://hashtaggeeks.com/jekyll-website/pages/how-to-install-anaconda-python.html" 
+         class="nav-link"
+         onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+         ><i class="fa fa-twitter"></i></a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hashtaggeeks.com/jekyll-website/pages/how-to-install-anaconda-python.html" 
+         class="nav-link"
+         onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+         ><i class="fa fa-linkedin"></i></a></li>
+
+      </ul>
+  </div>
+</div>
+</nav>
+</header>
+                <br>
+                <div class="row">
+                    <div class="col-xl-2 hidden-xs-down">
+                        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                    </div>
+                    <div class="col-xl-10">                
+                        <h3 id="how-to-install-anaconda-on-linux">How To Install Anaconda on Linux</h3>
+
+<p><a href="https://www.anaconda.com/" target="_blank">Anaconda</a> is an open-source package manager, environment manager, it is designed for data science and machine learning workflows. Anaconda offers collection of packages designed for normal programming to large scale data science and statistical analysis projects.</p>
+
+<p>Anaconda comes with a desktop graphical user interface (GUI) program called <strong><a href="https://docs.anaconda.com/anaconda/navigator/" target="_blank">Anaconda Navigator</a></strong>, which links all the applications included with the distribution like <a href="https://www.rstudio.com/" target="_blank">RStudio</a>, <a href="https://ipython.org/" target="_blank">iPython</a>, <a href="http://jupyter.org/" target="_blank">Jupyter Notebook</a>, <a href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906" target="_blank">JupyterLab</a>, <a href="https://spyder-ide.github.io/" target="_blank">Spyder</a>, <a href="http://glueviz.org/" target="_blank">Glue</a>, and <a href="https://orange.biolab.si/" target="_blank">Orange</a>.</p>
+
+<p>Anaconda distribution includes <a href="https://conda.io/" target="_blank">Conda</a> package manager, which helps to search and install 1000’s of packages with ease.</p>
+
+<p>Below is the step by step guide to insatall Anaconda in Linux.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Machine should have a non-root user with sudo privileges set up before proceeding with the steps below.</p>
+
+<div class="card">
+<div class="card-body ">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">grep</span> <span class="s1">'^sudo:.*$'</span> /etc/group | <span class="nb">cut</span> <span class="nt">-d</span>: <span class="nt">-f4</span>
+krish
+
+<span class="nv">$ </span>getent group <span class="nb">sudo</span> | <span class="nb">cut</span> <span class="nt">-d</span>: <span class="nt">-f4</span>
+krish</code></pre></figure>
+
+</div>
+</div>
+
+<p><br /></p>
+
+<h3 id="1-check-the-latest-version-of-anaconda">1. Check the Latest Version of Anaconda</h3>
+
+<p>Head over to <a href="https://www.anaconda.com/distribution/" target="_blank"> https://www.anaconda.com/distribution/</a>, once you are there, click on <strong>Linux</strong> and select the Python version of your preferece to <strong>/temp</strong> folder. or use curl or wget to download the verision from <a href="https://repo.anaconda.com/archive/" target="_blank">https://repo.anaconda.com/archive/</a></p>
+
+<div class="card">
+<div class="card-body ">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">cd</span> /tmp
+<span class="nv">$ </span>curl <span class="nt">-O</span> https://repo.anaconda.com/archive/Anaconda2-2019.07-Linux-x86_64.sh</code></pre></figure>
+
+</div>
+</div>
+
+<p><br /></p>
+
+<h3 id="2-verify-the-integrity-of-the-installer">2. Verify the Integrity of the Installer</h3>
+<p>Once download is complete verify the integrity of the installer by generating the SHA-256 checksum. Use the sha256sum or md5sum command along with the filename to generate the checksum and match with the values in the site <a href="https://docs.anaconda.com/anaconda/install/hashes/" target="_blank"> https://docs.anaconda.com/anaconda/install/hashes/</a></p>
+
+<div class="card">
+<div class="card-body ">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sha256sum </span>Anaconda3-2019.07-Linux-x86_64.sh
+69581cf739365ec7fb95608eef694ba959d7d33b36eb961953f2b82cb25bdf5a  Anaconda3-2019.07-Linux-x86_64.sh</code></pre></figure>
+
+</div>
+</div>
+
+<p><br /></p>
+
+<h3 id="3-run-the-anaconda-script">3. Run the Anaconda Script</h3>
+
+<p>Accpet the license agreement by entering [yes], you will be prompted to choose the location of the installation. Press ENTER to accept the default location, or specify a different location.</p>
+
+<div class="card">
+<div class="card-body ">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>bash Anaconda3-2019.07-Linux-x86_64.sh
+
+Welcome to Anaconda3 2019.07
+
+In order to <span class="k">continue </span>the installation process, please review the license
+agreement.
+Please, press ENTER to <span class="k">continue</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="o">===================================</span>
+Anaconda End User License Agreement
+<span class="o">===================================</span>
+
+Copyright 2015, Anaconda, Inc.
+
+All rights reserved under the 3-clause BSD License:
+
+Redistribution and use <span class="k">in </span><span class="nb">source </span>and binary forms, with or without modification, are permitte
+d provided that the following conditions are met:
+
+Do you accept the license terms? <span class="o">[</span><span class="nb">yes</span>|no]
+<span class="o">[</span>no] <span class="o">&gt;&gt;&gt;</span> <span class="nb">yes
+
+</span>Anaconda3 will now be installed into this location:
+/home/krish/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+<span class="o">[</span>/home/krish/anaconda3] <span class="o">&gt;&gt;&gt;</span></code></pre></figure>
+
+</div>
+</div>
+<p><br /></p>
+
+<h3 id="4-finish-the-installlation-process">4. Finish the installlation process</h3>
+
+<p>Installation will take time, wait for the insttlation process to finish.</p>
+
+<div class="card">
+<div class="card-body ">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Output
+Anaconda3 will now be installed into this location:
+/home/kris/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+<span class="o">[</span>/home/krish/anaconda3] <span class="o">&gt;&gt;&gt;</span>
+
+installation finished.
+Do you wish the installer to prepend the Anaconda3 <span class="nb">install </span>location
+to PATH <span class="k">in </span>your /home/krish/.bashrc ? <span class="o">[</span><span class="nb">yes</span>|no]
+<span class="o">[</span>no] <span class="o">&gt;&gt;&gt;</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Type yes to use the <strong>conda</strong> command. This is recommmended</p>
+
+<h3 id="5-validate-the-installation">5. Validate the installation</h3>
+
+<div class="card">
+<div class="card-body ">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">source</span> ~/.bashrc
+<span class="nv">$ </span>conda <span class="nt">-V</span>
+conda 4.7.10</code></pre></figure>
+
+</div>
+</div>
+
+<p><br /></p>
+
+<h3 id="6-launch-anaconda-navigator">6. Launch Anaconda-Navigator</h3>
+<div class="card">
+<div class="card-body ">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>anaconda-navigator</code></pre></figure>
+
+</div>
+</div>
+<p><br /></p>
+
+<p><img src="/jekyll-website/images/anaconda-navigator.png" class="img-fluid" alt="anaconda-navigator" /></p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    <script src="/jekyll-website/assets/vendor/jquery.min.js"></script>
+    <script src="/jekyll-website/assets/vendor/bootstrap.min.js"></script>
+    <script src="/jekyll-website/assets/vendor/bootstrap-toc.min.js"></script>
+    </body>
+</html>
