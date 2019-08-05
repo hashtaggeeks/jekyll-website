@@ -1,0 +1,568 @@
+<html>
+    <head>
+        <title>
+            Pandas Categorical data 
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"
+        itemprop="description"
+        name="description"
+        content="what is pandas categorical data, how to create catogeries in pandas, Categorical Datatype, CategoricalDtype, Working with pandas categories, Renaming categor..."
+        >
+        <link rel="canonical" href="http://hashtaggeeks.com/posts/pandas-categorical-data.html">
+
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Pandas Categorical data">
+        <meta property="og:url" content="http://hashtaggeeks.com/posts/pandas-categorical-data.html"> 
+        <meta property="og:site_name" content="Python Pandas Tutorial">
+        <meta property="article:publisher" content="https://hashtaggeeks.com" />
+        <meta property="article:author" content="https://hashtaggeeks.com" />
+        <meta property="article:published_time" content="2019-08-05 00:00:00 -0400" />
+        <meta property="og:description" content="what is pandas categorical data, how to create catogeries in pandas, Categorical Datatype, CategoricalDtype, Working with pandas categories, Renaming categories, add new categories">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Pandas Categorical data">
+        <meta name="twitter:description" content="what is pandas categorical data, how to create catogeries in pandas, Categorical Datatype, CategoricalDtype, Working with pandas categories, Renaming categories, add new categories">
+        <meta name="twitter:site" content="@hashtaggeeks" />
+        <meta name="twitter:creator" content="@hashtaggeeks">
+        <!-- site css -->
+        <link rel="stylesheet" href="/assets/main.css">
+        <link rel="stylesheet" href="/assets/syntax-style.css">
+        <link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+
+    </head>
+    <body class="pt-5" data-spy="scroll">
+        <main role="main">
+            <div class="container-fluid">
+                <header>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand" href="/">#Geeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
+  </div>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=http://hashtaggeeks.com/posts/pandas-categorical-data.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=http://hashtaggeeks.com/posts/pandas-categorical-data.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hashtaggeeks.com/posts/pandas-categorical-data.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
+</header>
+                <br>
+                <div class="row">
+                    <div class="col-xl-2 d-none d-lg-block">
+                        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                    </div>                    
+                    <div class="col-xl-8">
+                        <h3 style="padding-top: 60px; margin-top: -40px;">Pandas Categorical Datatype </h3>
+
+<p>Categoricals are a pandas data type corresponding to categorical variables in statistics. A categorical variable takes on a limited, and usually fixed, number of possible values.</p>
+
+<p>All values of categorical data are either in categories or np.nan. Order is defined by the order of categories, not lexical order of the values. Internally, the data structure consists of a categories array and an integer array of codes which point to the real value in the categories array.</p>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Create Categorical column</h3>
+
+<p>Simple method is to specify dtype=”category” when constructing a series</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">sr <span class="o">=</span> pd.Series<span class="o">([</span><span class="s2">"east"</span>, <span class="s2">"west"</span>, <span class="s2">"north"</span>, <span class="s2">"east"</span>, <span class="s2">"south"</span>, <span class="s2">"west"</span><span class="o">]</span>, <span class="nv">dtype</span><span class="o">=</span><span class="s2">"category"</span><span class="o">)</span>
+sr</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>0     east
+1     west
+2    north
+3     east
+4    south
+5     west
+dtype: category
+Categories (4, object): [east, north, south, west]</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<p>Converting an existing Series or column to a category datatype</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">df</span> <span class="o">=</span> pd.DataFrame<span class="o">({</span><span class="s1">'name'</span>: <span class="o">[</span><span class="s1">'Alice'</span>,<span class="s1">'Allen'</span>,<span class="s1">'Ward'</span>,<span class="s1">'Jones'</span><span class="o">]</span>, 
+                   <span class="s1">'gender'</span>:[<span class="s1">'Female'</span>,<span class="s1">'Male'</span>,<span class="s1">'Male'</span>,<span class="s1">'Male'</span><span class="o">]})</span>
+<span class="nb">df</span><span class="o">[</span><span class="s2">"gender"</span><span class="o">]</span> <span class="o">=</span> <span class="nb">df</span><span class="o">[</span><span class="s2">"gender"</span><span class="o">]</span>.astype<span class="o">(</span><span class="s2">"category"</span><span class="o">)</span>
+df.dtypes</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>
+name        object
+gender    category
+dtype: object</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<p>By passing a <strong>pandas.Categorical</strong> object to a Series or assigning it to a DataFrame.</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">l_cat <span class="o">=</span> pd.Categorical<span class="o">([</span><span class="s2">"Female"</span>,<span class="s2">"Male"</span>,<span class="s2">"Male"</span>,<span class="s2">"Male"</span><span class="o">])</span>
+
+<span class="nb">df</span> <span class="o">=</span> pd.DataFrame<span class="o">({</span><span class="s1">'name'</span>: <span class="o">[</span><span class="s1">'Alice'</span>,<span class="s1">'Allen'</span>,<span class="s1">'Ward'</span>,<span class="s1">'Jones'</span><span class="o">]</span>, 
+                   <span class="s1">'gender'</span>:[<span class="s1">'Female'</span>,<span class="s1">'Male'</span>,<span class="s1">'Male'</span>,<span class="s1">'Male'</span><span class="o">]})</span>
+<span class="nb">df</span><span class="o">[</span><span class="s2">"gender"</span><span class="o">]</span> <span class="o">=</span> l_cat
+df.dtypes</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>
+name        object
+gender    category
+dtype: object</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Pandas CategoricalDType</h3>
+
+<p>Create a CategoricalDtype and assign that to column datatype.</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">from pandas.api.types import CategoricalDtype
+cat_type <span class="o">=</span> CategoricalDtype<span class="o">(</span><span class="nv">categories</span><span class="o">=[</span><span class="s1">'Male'</span>,<span class="s1">'Female'</span><span class="o">]</span>,ordered<span class="o">=</span>True<span class="o">)</span>
+
+<span class="nb">df</span> <span class="o">=</span> pd.DataFrame<span class="o">({</span><span class="s1">'name'</span>: <span class="o">[</span><span class="s1">'Alice'</span>,<span class="s1">'Allen'</span>,<span class="s1">'Ward'</span>,<span class="s1">'Jones'</span><span class="o">]</span>, 
+                   <span class="s1">'gender'</span>:[<span class="s1">'Female'</span>,<span class="s1">'Male'</span>,<span class="s1">'Male'</span>,<span class="s1">'Male'</span><span class="o">]})</span>
+<span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.astype<span class="o">(</span>cat_type<span class="o">)</span>
+
+<span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span></code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>0    Female
+1      Male
+2      Male
+3      Male
+Name: gender, dtype: category
+Categories (2, object): [Male &lt; Female]</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Remanimg Categories</h3>
+
+<p>Renaming categories is done by assigning new values to the Series.cat.categories property or by using the rename_categories() method:</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># create daframe and change gender column to category type </span>
+<span class="nb">df</span> <span class="o">=</span> pd.DataFrame<span class="o">({</span><span class="s1">'name'</span>: <span class="o">[</span><span class="s1">'Alice'</span>,<span class="s1">'Allen'</span>,<span class="s1">'Ward'</span>,<span class="s1">'Jones'</span><span class="o">]</span>, 
+                   <span class="s1">'gender'</span>:[<span class="s1">'Female'</span>,<span class="s1">'Male'</span>,<span class="s1">'Male'</span>,<span class="s1">'Male'</span><span class="o">]})</span>
+<span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.astype<span class="o">(</span><span class="s1">'category'</span><span class="o">)</span>
+df.dtypes</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>0    Female
+1      Male
+2      Male
+3      Male
+Name: gender, dtype: category
+Categories (2, object): [Male &lt; Female]</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># Check the values in the categories</span>
+<span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.categories</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>Index(['Female', 'Male'], dtype='object')</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<p>Method 1 :: Assign new value to the category, here we will assign it to M and F</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.categories <span class="o">=</span> <span class="o">[</span>s[0] <span class="k">for </span>s <span class="k">in </span><span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.categories]
+<span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.categories</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>Index(['F', 'M'], dtype='object')</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<p>Method 2 :: Using the rename_categories() method will assign M and F</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.rename_categories<span class="o">([</span><span class="s1">'F'</span>, <span class="s1">'M'</span><span class="o">])</span>
+<span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.dtypes</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>CategoricalDtype(categories=['F', 'M'], ordered=False)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<p>Method 3 :: Pass a dict-object to map the renaming</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.rename_categories<span class="o">({</span><span class="s1">'Female'</span>:<span class="s1">'Fe'</span>, <span class="s1">'Male'</span>:<span class="s1">'Ma'</span><span class="o">})</span>
+<span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.dtypes</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>CategoricalDtype(categories=['Fe', 'Ma'], ordered=False)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Adding new categories</h3>
+<p>Using add_categories() method new categories can be added</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.add_categories<span class="o">([</span><span class="s1">'Cat1'</span>,<span class="s1">'Cat2'</span><span class="o">])</span>
+<span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.dtypes</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>CategoricalDtype(categories=['Fe', 'Ma', 'Cat1', 'Cat2'], ordered=False)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Removing categories, unused category items</h3>
+<p>Using remove_categories() method remove specific categories or use remove_unused_categories() to remove unused items</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.remove_categories<span class="o">([</span><span class="s1">'Cat1'</span>,<span class="s1">'Cat2'</span><span class="o">])</span>
+<span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.dtypes</code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>CategoricalDtype(categories=['Fe', 'Ma'], ordered=False)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.remove_categories<span class="o">([</span><span class="s1">'Ma'</span><span class="o">])</span>
+<span class="nb">df</span></code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>CategoricalDtype(categories=['Fe', 'Ma'], ordered=False)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+<p>If an used category is removed the data will become NaN</p>
+
+<div class="cell border-box-sizing code_cell rendered selected">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span> <span class="o">=</span> <span class="nb">df</span><span class="o">[</span><span class="s1">'gender'</span><span class="o">]</span>.cat.remove_categories<span class="o">([</span><span class="s1">'Ma'</span><span class="o">])</span>
+<span class="nb">df</span></code></pre></figure>
+
+</div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out [1]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Alice</td>
+      <td>Fe</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Allen</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Ward</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Jones</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre></pre>
+
+                    </div>
+                    <div class="col-xl-2">
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    <script src="/assets/vendor/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap.min.js"></script>
+    <script src="/assets/vendor/bootstrap-toc.min.js"></script>
+
+    </body>
+</html>
