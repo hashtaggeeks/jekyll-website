@@ -7,12 +7,12 @@
         itemprop="description"
         name="description"
         content="Pandas tutorial covering how to install anaconda, create dataframe, how to query dataframe, how to filter dataframe, add delete rows to dataframe, join multi...">
-        <link rel="canonical" href="http://hashtaggeeks.com/">
+        <link rel="canonical" href="/index.html">
         
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="article">
         <meta property="og:title" content="Python Pandas Tutorial">
-        <meta property="og:url" content="http://hashtaggeeks.com/"> 
+        <meta property="og:url" content="/index.html"> 
         <meta property="og:site_name" content="Python Pandas Tutorial">
         <meta property="article:publisher" content="https://hashtaggeeks.com" />
         <meta property="article:author" content="https://hashtaggeeks.com" />
@@ -27,130 +27,199 @@
 
 
         <!-- site css --> 
-        <link rel="stylesheet" href="/assets/main.css">
-        <link rel="stylesheet" href="/assets/syntax-style.css">
-        <link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+        <link rel="stylesheet" href="/jekyll-website/assets/main.css">
+        <link rel="stylesheet" href="/jekyll-website/assets/syntax-style.css">
+        <link rel="stylesheet" href="/jekyll-website/assets/vendor/bootstrap-toc.min.css"> 
 
     </head>
-    <body class="pt-5">
+    <body class="pt-5 " >
         <header>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" role="navigation" >
-  <div class="container"> 
-    <a class="navbar-brand" href="/">Python Pandas</a>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <!--
-        <li class="nav-item">
-          <a class="nav-link" href="/pages/pandas.html">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html">About</a> 
-        </li>
-      -->
-      </ul>
-      <ul class="navbar-nav navbar-right">
-        <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=http://hashtaggeeks.com/" 
-         class="nav-link"
-         onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-         ><i class="fa fa-facebook"></i></a></li>
-         <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=http://hashtaggeeks.com/" 
-         class="nav-link"
-         onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-         ><i class="fa fa-twitter"></i></a></li>
-        <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hashtaggeeks.com/" 
-         class="nav-link"
-         onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-         ><i class="fa fa-linkedin"></i></a></li>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
-      </ul>
+  <a class="navbar-brand" href="/jekyll-website/">#Geeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/jekyll-website/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/jekyll-website/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
   </div>
-</div>
-</nav>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=/jekyll-website/index.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=/jekyll-website/index.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=/jekyll-website/index.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
 </header>
         <br>
         <main role="main">
-            <div class="container" >
-                <div id="top" class="container">
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron jumbotron-fluid">
-  <div class="container-fluid">
-    <h1 class="display-6">Python Pandas!</h1>
-    <p><a href="http://pandas.pydata.org/" target="_blank">Pandas</a>&nbsp;is a data analysis Python library.
-      Started by&nbsp;<a href="http://wesmckinney.com/pages/about.html" target="_blank">Wes McKinney</a>&nbsp;in 2008 out
-      of a need for a powerful and flexible quantitative analysis tool, pandas has grown into one of the
-      most popular Python libraries. It has an extremely active&nbsp;<a href="https://github.com/pydata/pandas/graphs/contributors" target="_blank">community of contributors</a>.</p>
-    <p>Pandas is built on top of two core Python libraries.</p>
-    <ul>
-      <li>NumPy&nbsp;for mathematical operations</li>
-      <li>matplotlib&nbsp;for data visualization</li>
-    </ul>
-    <p>Pandas package comes with several data structures that can be used for many different data
-      manipulation tasks.</p>
+            <div class="container-fluid" >
+                <div class="row">
+                    <div class="col-2 d-none d-lg-block" >
+                        <nav id="toc" data-toggle="hashtaggeeks" class="sticky-top">
+
+<div class="card bg-light">
+
+<div class="card card-body bg-light">
+<h5 class="card-title" href="/jekyll-website/"> Topics </h5>
+<ul class="nav navbar-nav">
+
+  <li>
+    <a class="nav-link" href="/jekyll-website/topics/python/index.html"> Python </a>
+  </li>
+
+  <li>
+    <a class="nav-link" href="/jekyll-website/topics/pandas/index.html"> Pandas </a>
+  </li>
+
+</div>
+</div>
+</nav>
+
+                    </div>                    
+                    <div class="col-9">
+                        <!-- Featured 
+================================================== -->
+
+
+  <section class="featured-posts">
+    <div class="section-title">
+      <h2><span>Featured</span></h2>
+    </div> 
+  
+  <div class="row">
+  
+    
+  
+    
+      <div class="col-lg-4 col-md-6 mb-30px card-group">
+<div class="card">
+<img class="card-img-top" src="/jekyll-website/images/anaconda.jpg" alt="anaconda-python">
+<div class="card-body">
+<a href="/jekyll-website/posts/how-to-install-anaconda-python.html"><h4>How To Install Anaconda Python</h4></a>
+Designed for data science and machine learning workflows, <a href='https://www.anaconda.com' target='_blank'>Anaconda</a> is an open-source package manager, environment manager, and distribution of the <a href='https://www.python.org/' target='_blank'>Python</a>...
+</div>
+</div>
+</div> 
+    
+  
+    
+  
   </div>
-</div>
+  
+  </section>
 
 
-<p>
-<div class="row">
-<div class="col-xl-9">
-<h3><a href="/pages/how-to-install-anaconda-python.html">How To Install Anaconda Python</a></h3>
+<!-- post contents 
+================================================== -->
+<section class="recent-posts">
 
-<p>Designed for data science and machine learning workflows, <a href="https://www.anaconda.com" target="_blank">Anaconda</a> is an open-source package manager, environment manager, and distribution of the <a href="https://www.python.org/" target="_blank">Python</a> and <a href="https://www.r-project.org/" target="_blank">R</a> programming languages.</p>
-
-<p>It includes: <ul><li>The core python language</li> <li>100+ <a href="https://www.python.org/" target="_blank">python</a> 'packages' (libraries)</li> <li><a href="https://www.spyder-ide.org/" target="_blank">Spyder</a> (IDE/editor - like <a href="https://www.jetbrains.com/pycharm/" target="_blank">pycharm</a>) and <a href="https://jupyter.org/" target="_blank">Jupyter</a></li> <li><a href="https://docs.conda.io/en/latest/" target="_blank">conda</a>, Anaconda's own package manager, used for updating <a href="https://www.anaconda.com" target="_blank">Anaconda</a> and packages</li></ul></p>
-
-</div>
-<div class="col-xl-3 hidden-xs-up">
-<img src="/images/anaconda.jpg" class="featurette-image img-fluid d-none d-xl-block" alt="anaconda-python" />
-</div>
-</div>
-
-<p>
-<div class="row">
-<div class="col-xl-9">
-<h3><a href="/pages/how-to-create-pandas-dataframe.html">Create Pandas dataframe</a></h3>
-
-<p>Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects</p>
-
-<p>A pandas DataFrame can be created using various inputs like List, dict, Series, Numpy ndarray or another dataframe</p>
-
-</div>
-<div class="col-xl-3 hidden-xs-up">
-<img src="/images/pandas.jpg" class="featurette-image img-fluid d-none d-xl-block" alt="Pandas dataframe" />
+  <div class="section-title">
+    <h2><span>All Stories</span></h2>
+  </div>
+  
+  <div class="row">
+   
+    <div class="col-lg-4 col-md-6 mb-30px card-group">
+<div class="card">
+<img class="card-img-top" src="/jekyll-website/images/dataframe-index.png" alt="Pandas dataframe index">
+<div class="card-body">
+<a href="/jekyll-website/posts/pandas-dataframe-index.html"><h4>Pandas Index</h4></a>
+Dataframe index is the address to access rows. The default index created by the dataframe is RangeIndex of int64. Index can be set during the...
 </div>
 </div>
-
-<p>
-<div class="row">
-<div class="col-xl-9">
-<h3><a href="/pages/pandas-dataframe-index.html">Pandas dataframe index</a></h3>
-
-<p>Dataframe index is the address to access rows. The default index created by the dataframe is RangeIndex of int64.</p>
-
-<p>Index can be set during the dataframe creation or can be changed later using set_index or reset_index methods</p>
-
-<p>Hierarchical / Multi-level indexing enables you to store and manipulate data with an arbitrary number of dimensions in lower dimensional data structures like Series (1d) and DataFrame (2d).</p>
-
 </div>
-<div class="col-xl-3 hidden-xs-up">
-<img src="/images/dataframe-index.png" class="featurette-image img-fluid d-none d-xl-block" alt="Pandas dataframe index" />
+   
+    <div class="col-lg-4 col-md-6 mb-30px card-group">
+<div class="card">
+<img class="card-img-top" src="/jekyll-website/images/anaconda.jpg" alt="anaconda-python">
+<div class="card-body">
+<a href="/jekyll-website/posts/how-to-install-anaconda-python.html"><h4>How To Install Anaconda Python</h4></a>
+Designed for data science and machine learning workflows, <a href='https://www.anaconda.com' target='_blank'>Anaconda</a> is an open-source package manager, environment manager, and distribution of the <a href='https://www.python.org/' target='_blank'>Python</a>...
 </div>
 </div>
+</div>
+   
+    <div class="col-lg-4 col-md-6 mb-30px card-group">
+<div class="card">
+<img class="card-img-top" src="/jekyll-website/images/pandas.jpg" alt="Pandas dataframe">
+<div class="card-body">
+<a href="/jekyll-website/posts/how-to-create-pandas-dataframe.html"><h4>Create Pandas dataframe</h4></a>
+Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). Arithmetic operations align on both row and column...
+</div>
+</div>
+</div>
+  
+  </div>
+  
+</section>
+
+<!-- pagination 
+================================================== -->
+
+<style>
+  .selected{ color: magenta; }
+</style>
+<div class="pagination-square-container">
+<div class="pagination-box-container">
 
 
-<br />
+</div>
+</div> 
+  
+
 <!--
 You can use HTML elements in Markdown, such as the comment element, and they won't be affected by a markdown parser. However, if you create an HTML element in your markdown file, you cannot use markdown syntax within that element's contents.
 -->
-</p></p></p></div>
-                
+                    </div>
+                    <div class="col-1 d-none d-lg-block"> 
+                    </div>
+                </div>        
             </div>
         </main>
-    <script src="/assets/vendor/jquery.min.js"></script>
-    <script src="/assets/vendor/bootstrap.min.js"></script>
-    <script src="/assets/vendor/bootstrap-toc.min.js"></script>
+    <script src="/jekyll-website/assets/vendor/jquery.min.js"></script>
+    <script src="/jekyll-website/assets/vendor/bootstrap.min.js"></script>
+    <script src="/jekyll-website/assets/vendor/bootstrap-toc.min.js"></script>
+
     </body>
 </html>

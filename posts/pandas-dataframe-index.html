@@ -8,16 +8,16 @@
         name="description"
         content="what is pandas dataframe index, how to create dataframe with custom index, rename the index column, set index column, how to reset index, how to reindex"
         >
-        <link rel="canonical" href="http://hashtaggeeks.com/pages/pandas-dataframe-index.html">
+        <link rel="canonical" href="/posts/pandas-dataframe-index.html">
 
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="article">
         <meta property="og:title" content="Pandas Index">
-        <meta property="og:url" content="http://hashtaggeeks.com/pages/pandas-dataframe-index.html"> 
+        <meta property="og:url" content="/posts/pandas-dataframe-index.html"> 
         <meta property="og:site_name" content="Python Pandas Tutorial">
         <meta property="article:publisher" content="https://hashtaggeeks.com" />
         <meta property="article:author" content="https://hashtaggeeks.com" />
-        <meta property="article:published_time" content="" />
+        <meta property="article:published_time" content="2019-08-01 00:00:00 -0400" />
         <meta property="og:description" content="what is pandas dataframe index, how to create dataframe with custom index, rename the index column, set index column, how to reset index, how to reindex">
 
         <meta name="twitter:card" content="summary">
@@ -26,64 +26,85 @@
         <meta name="twitter:site" content="@hashtaggeeks" />
         <meta name="twitter:creator" content="@hashtaggeeks">
         <!-- site css -->
-        <link rel="stylesheet" href="/assets/main.css">
-        <link rel="stylesheet" href="/assets/syntax-style.css">
-        <link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+        <link rel="stylesheet" href="/jekyll-website/assets/main.css">
+        <link rel="stylesheet" href="/jekyll-website/assets/syntax-style.css">
+        <link rel="stylesheet" href="/jekyll-website/assets/vendor/bootstrap-toc.min.css"> 
 
     </head>
-    <body class="pt-5" data-spy="scroll" data-target="#toc">
+    <body class="pt-5" data-spy="scroll">
         <main role="main">
-            <div class="container">
+            <div class="container-fluid">
                 <header>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" role="navigation" >
-  <div class="container"> 
-    <a class="navbar-brand" href="/">Python Pandas</a>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <!--
-        <li class="nav-item">
-          <a class="nav-link" href="/pages/pandas.html">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html">About</a> 
-        </li>
-      -->
-      </ul>
-      <ul class="navbar-nav navbar-right">
-        <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=http://hashtaggeeks.com/pages/pandas-dataframe-index.html" 
-         class="nav-link"
-         onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-         ><i class="fa fa-facebook"></i></a></li>
-         <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=http://hashtaggeeks.com/pages/pandas-dataframe-index.html" 
-         class="nav-link"
-         onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-         ><i class="fa fa-twitter"></i></a></li>
-        <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hashtaggeeks.com/pages/pandas-dataframe-index.html" 
-         class="nav-link"
-         onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-         ><i class="fa fa-linkedin"></i></a></li>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
-      </ul>
+  <a class="navbar-brand" href="/jekyll-website/">#Geeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/jekyll-website/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/jekyll-website/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
   </div>
-</div>
-</nav>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=/jekyll-website/posts/pandas-dataframe-index.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=/jekyll-website/posts/pandas-dataframe-index.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=/jekyll-website/posts/pandas-dataframe-index.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
 </header>
                 <br>
                 <div class="row">
-                    <div class="col-xl-2 hidden-xs-down">
+                    <div class="col-xl-2 d-none d-lg-block">
                         <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-                    </div>
-                    <div class="col-xl-10">                
-                        <h3 id="pandas-dataframe-index">Pandas dataframe index</h3>
+                    </div>                    
+                    <div class="col-xl-8">
+                        <h3 style="padding-top: 60px; margin-top: -40px;">Pandas dataframe index</h3>
 
 <p>Dataframe index is the address to access rows. The default index created by the dataframe is RangeIndex of int64.</p>
 
 <p>Index can be set during the dataframe creation or can be changed later using set_index or reset_index methods</p>
 
-<h3 id="1-create-dataframe-with-default-index">1. Create dataframe with default index</h3>
+<h3 style="padding-top: 60px; margin-top: -40px;">Create dataframe with default index</h3>
 
 <p>A Data frame is a two-dimensional data structure, i.e data is arranged in rows and columns. Index is like pointer across the dataseries in columns and thats how data is accessed.</p>
 
@@ -202,9 +223,7 @@ dfEmp.head<span class="o">()</span></code></pre></figure>
 </div>
 <pre></pre>
 
-<p><br /></p>
-
-<h3 id="2-create-dataframe-with-custom-index">2. Create dataframe with custom index</h3>
+<h3 style="padding-top: 60px; margin-top: -40px;">Create dataframe with custom index</h3>
 
 <p>During the dataframe creation the argument “index” can be used to pass a new index values. The dataframe will be created with the passed index value.</p>
 
@@ -349,9 +368,7 @@ dfEmp.head<span class="o">()</span></code></pre></figure>
 </div>
 <pre></pre>
 
-<p><br /></p>
-
-<h3 id="3-check-dataframe-index-attributes">3. Check Dataframe index attributes</h3>
+<h3 style="padding-top: 60px; margin-top: -40px;">Check Dataframe index attributes</h3>
 
 <p>Use the dataframe index method to check the attributes of index. We will also change the column name of the index.</p>
 
@@ -407,9 +424,7 @@ dfEmp.head<span class="o">()</span></code></pre></figure>
 </div>
 <pre></pre>
 
-<p><br /></p>
-
-<h3 id="4-rename-dataframe-index-column">4. Rename dataframe index column</h3>
+<h3 style="padding-top: 60px; margin-top: -40px;">Rename dataframe index column</h3>
 
 <p>Name the default index column</p>
 
@@ -547,9 +562,7 @@ dfEmp.head<span class="o">()</span></code></pre></figure>
 </div>
 <pre></pre>
 
-<p><br /></p>
-
-<h3 id="5-set-pandas-dataframe-index">5. Set pandas dataframe index</h3>
+<h3 style="padding-top: 60px; margin-top: -40px;">Set pandas dataframe index</h3>
 
 <p>Change the index of dataframe using the columns available in the frame. By default it will yield and new dataframe. <strong>inplace</strong> parameter can be used to modify the dataframe in plave to avoid creating new dataframe.</p>
 
@@ -690,9 +703,7 @@ dfDept</code></pre></figure>
 </div>
 <pre></pre>
 
-<p><br /></p>
-
-<h3 id="6-reindex-pandas-dataframe">6. Reindex pandas dataframe</h3>
+<h3 style="padding-top: 60px; margin-top: -40px;">Reindex pandas dataframe</h3>
 
 <p>Reindexing (<strong>pandas.DataFrame.reindex</strong>) will change the DataFrame row and column labels. To reindex means to conform the data to match a given set of labels along a particular axis.</p>
 
@@ -1051,11 +1062,15 @@ dfDept</code></pre></figure>
 <pre></pre>
 
                     </div>
+                    <div class="col-xl-2">
+                        
+                    </div>
                 </div>
             </div>
         </main>
-    <script src="/assets/vendor/jquery.min.js"></script>
-    <script src="/assets/vendor/bootstrap.min.js"></script>
-    <script src="/assets/vendor/bootstrap-toc.min.js"></script>
+    <script src="/jekyll-website/assets/vendor/jquery.min.js"></script>
+    <script src="/jekyll-website/assets/vendor/bootstrap.min.js"></script>
+    <script src="/jekyll-website/assets/vendor/bootstrap-toc.min.js"></script>
+
     </body>
 </html>

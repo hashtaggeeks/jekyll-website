@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<url><loc>https://krisdilip.github.io/posts/pandas-dataframe-</loc></url>
 
+<url><loc>https://krisdilip.github.io/posts/how-to-install-anaconda-python.html</loc></url>
 
-
-<url><loc>https://krisdilip.github.iohttp://hashtaggeeks.com/about.html</loc></url>
-
-
-
-
-
-<url><loc>https://krisdilip.github.iohttp://hashtaggeeks.com/pages/how-to-create-pandas-dataframe.html</loc></url>
+<url><loc>https://krisdilip.github.io/posts/how-to-create-pandas-dataframe.html</loc></url>
 
 
 
 
-
-<url><loc>https://krisdilip.github.iohttp://hashtaggeeks.com/pages/how-to-install-anaconda-python.html</loc></url>
-
-
-
-
-
-<url><loc>https://krisdilip.github.iohttp://hashtaggeeks.com/</loc></url>
+<url><loc>https://krisdilip.github.io/about</loc></url>
 
 
 
@@ -30,9 +18,21 @@
 
 
 
-<url><loc>https://krisdilip.github.iohttp://hashtaggeeks.com/pages/pandas-dataframe-</loc></url>
 
 
+<url><loc>https://krisdilip.github.io/</loc></url>
+
+
+
+
+
+<url><loc>https://krisdilip.github.io/topics/pandas/</loc></url>
+
+
+
+
+
+<url><loc>https://krisdilip.github.io/topics/python/</loc></url>
 
 
 
