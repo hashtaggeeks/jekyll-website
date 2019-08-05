@@ -5,6 +5,7 @@
 <div class="card card-body bg-light">
 <h5 class="card-title" href="{{'/' | prepend: site.baseurl}}"> Topics </h5>
 <ul class="nav navbar-nav">
+
 {% for menu in site.data.data.side-menu %}
   <li>
     <a class="nav-link" href="{{menu.url | prepend: site.baseurl}}"> {{ menu.topic }} </a>

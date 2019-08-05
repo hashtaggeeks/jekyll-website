@@ -2,8 +2,8 @@
 <div class="card">
 <img class="card-img-top" src="{{post.image-url | prepend: site.baseurl}}" alt="{{post.alt-img}}">
 <div class="card-body">
-<a href="{{post.url | prepend: site.baseurl}}"><h4>{{post.title}}</h4></a>
-{{post.short-description | truncatewords:25}}
+<a href="{{post.url | prepend: site.baseurl}}"><h5 class="card-title">{{post.title}}</h5></a>
+<p class="card-text">{{post.short-description | truncatewords:30}}</p>
 </div>
 </div>
 </div>
