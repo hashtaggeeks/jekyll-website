@@ -2,9 +2,14 @@
 title: How To Install Anaconda Python
 description: download anaconda, install anaconda python in linux machines. anaconda installer, run jupyter notebook, verify anaconda installation.
 layout: content
+categories: python pandas
+featured: true 
+image-url: /images/anaconda.jpg
+alt-img: anaconda-python
+short-description: "Designed for data science and machine learning workflows, <a href='https://www.anaconda.com' target='_blank'>Anaconda</a> is an open-source package manager, environment manager, and distribution of the <a href='https://www.python.org/' target='_blank'>Python</a> and <a href='https://www.r-project.org/' target='_blank'>R</a> programming languages."
 ---
 
-### How To Install Anaconda on Linux
+<h3 style="padding-top: 60px; margin-top: -40px;">How To Install Anaconda on Linux</h3>
 
 <a href="https://www.anaconda.com/" target="_blank">Anaconda</a> is an open-source package manager, environment manager, it is designed for data science and machine learning workflows. Anaconda offers collection of packages designed for normal programming to large scale data science and statistical analysis projects.
 
@@ -14,7 +19,7 @@ Anaconda distribution includes <a href="https://conda.io/" target="_blank">Conda
 
 Below is the step by step guide to insatall Anaconda in Linux.
 
-### Prerequisites
+<h3 style="padding-top: 60px; margin-top: -40px;">Prerequisites</h3>
 Machine should have a non-root user with sudo privileges set up before proceeding with the steps below.
 
 <div class="card">
@@ -29,9 +34,8 @@ krish
 </div>
 </div>
 
-<br>
 
-### 1. Check the Latest Version of Anaconda
+<h3 style="padding-top: 60px; margin-top: -40px;">Check the Latest Version of Anaconda</h3>
 
 Head over to <a href="https://www.anaconda.com/distribution/" target="_blank"> https://www.anaconda.com/distribution/</a>, once you are there, click on **Linux** and select the Python version of your preferece to **/temp** folder. or use curl or wget to download the verision from <a href="https://repo.anaconda.com/archive/" target="_blank">https://repo.anaconda.com/archive/
 
@@ -44,9 +48,7 @@ $ curl -O https://repo.anaconda.com/archive/Anaconda2-2019.07-Linux-x86_64.sh
 </div>
 </div>
 
-<br>
-
-### 2. Verify the Integrity of the Installer
+<h3 style="padding-top: 60px; margin-top: -40px;">Verify the Integrity of the Installer</h3>
 Once download is complete verify the integrity of the installer by generating the SHA-256 checksum. Use the sha256sum or md5sum command along with the filename to generate the checksum and match with the values in the site <a href="https://docs.anaconda.com/anaconda/install/hashes/" target="_blank"> https://docs.anaconda.com/anaconda/install/hashes/
 
 
@@ -59,9 +61,7 @@ $ sha256sum Anaconda3-2019.07-Linux-x86_64.sh
 </div>
 </div>
 
-<br>
-
-### 3. Run the Anaconda Script
+<h3 style="padding-top: 60px; margin-top: -40px;">Run the Anaconda Script</h3>
 
 Accpet the license agreement by entering [yes], you will be prompted to choose the location of the installation. Press ENTER to accept the default location, or specify a different location.
 
@@ -102,9 +102,9 @@ Anaconda3 will now be installed into this location:
 {% endhighlight %}
 </div>
 </div>
-<br>
 
-### 4. Finish the installlation process
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Finish the installlation process</h3>
 
 Installation will take time, wait for the insttlation process to finish.
 
@@ -132,7 +132,7 @@ to PATH in your /home/krish/.bashrc ? [yes|no]
 <br>
 Type yes to use the **conda** command. This is recommmended
 
-### 5. Validate the installation
+<h3 style="padding-top: 60px; margin-top: -40px;">Validate the installation</h3>
 
 <div class="card">
 <div class="card-body ">
@@ -144,9 +144,7 @@ conda 4.7.10
 </div>
 </div>
 
-<br>
-
-### 6. Launch Anaconda-Navigator
+<h3 style="padding-top: 60px; margin-top: -40px;">Launch Anaconda-Navigator</h3>
 <div class="card">
 <div class="card-body ">
 {% highlight shell %}

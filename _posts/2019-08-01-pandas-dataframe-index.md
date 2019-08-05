@@ -2,16 +2,22 @@
 title: Pandas Index
 description: what is pandas dataframe index, how to create dataframe with custom index, rename the index column, set index column, how to reset index, how to reindex
 layout: content
+categories: pandas
+featured: false 
+image-url: /images/dataframe-index.png
+alt-img: Pandas dataframe index
+short-description: "Dataframe index is the address to access rows. The default index created by the dataframe is RangeIndex of int64.
+Index can be set during the dataframe creation or can be changed later using set_index or reset_index methods"
 ---
 
-### Pandas dataframe index 
+<h3 style="padding-top: 60px; margin-top: -40px;">Pandas dataframe index</h3>
 
 Dataframe index is the address to access rows. The default index created by the dataframe is RangeIndex of int64.
 
 Index can be set during the dataframe creation or can be changed later using set_index or reset_index methods
 
 
-### 1. Create dataframe with default index
+<h3 style="padding-top: 60px; margin-top: -40px;">Create dataframe with default index</h3>
 
 A Data frame is a two-dimensional data structure, i.e data is arranged in rows and columns. Index is like pointer across the dataseries in columns and thats how data is accessed.
 
@@ -110,9 +116,8 @@ output="<table border=\"1\" class=\"dataframe\">
 </table>"
 %}
 
-<br>
 
-### 2. Create dataframe with custom index
+<h3 style="padding-top: 60px; margin-top: -40px;">Create dataframe with custom index</h3>
 
 During the dataframe creation the argument "index" can be used to pass a new index values. The dataframe will be created with the passed index value.
 
@@ -218,9 +223,7 @@ output="Int64Index([7369, 7499, 7521, 7566, 7698, 7782, 7788, 7839, 7844, 7876, 
            dtype='int64')"
 %}
 
-<br>
-
-### 3. Check Dataframe index attributes
+<h3 style="padding-top: 60px; margin-top: -40px;">Check Dataframe index attributes</h3>
 
 Use the dataframe index method to check the attributes of index. We will also change the column name of the index.
  
@@ -237,9 +240,7 @@ input="dfEmp.index.dtype"
 output="dtype('int64')"
 %}
 
-<br>
-
-### 4. Rename dataframe index column 
+<h3 style="padding-top: 60px; margin-top: -40px;">Rename dataframe index column</h3>
 
 Name the default index column
 
@@ -337,9 +338,7 @@ output="<table border=\"1\" class=\"dataframe\">
 </table>"
 %}
 
-<br>
-
-### 5. Set pandas dataframe index
+<h3 style="padding-top: 60px; margin-top: -40px;">Set pandas dataframe index</h3>
 
 Change the index of dataframe using the columns available in the frame. By default it will yield and new dataframe. **inplace** parameter can be used to modify the dataframe in plave to avoid creating new dataframe.
 
@@ -439,9 +438,7 @@ output="<table border=\"1\" class=\"dataframe\">
 </table>"
 %}
 
-<br>
-
-### 6. Reindex pandas dataframe
+<h3 style="padding-top: 60px; margin-top: -40px;">Reindex pandas dataframe</h3>
 
 Reindexing (**pandas.DataFrame.reindex**) will change the DataFrame row and column labels. To reindex means to conform the data to match a given set of labels along a particular axis.
 

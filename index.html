@@ -1,0 +1,54 @@
+---
+title: Python Pandas Tutorial
+description: Pandas tutorial covering how to install anaconda, create dataframe, how to query dataframe, how to filter dataframe, add delete rows to dataframe, join multiple dataframe
+layout: default
+pagination: 
+  enabled: true
+---
+
+
+<!-- Featured 
+================================================== -->
+
+{% if page.url == "/index.html" %}
+  <section class="featured-posts">
+    <div class="section-title">
+      <h2><span>Featured</span></h2>
+    </div> 
+  
+  <div class="row">
+  {% for post in site.posts %}
+    {% if post.featured == true %}
+      {% include post-card.html %} 
+    {% endif %}
+  {% endfor %}
+  </div>
+  
+  </section>
+{% endif %}
+
+<!-- post contents 
+================================================== -->
+<section class="recent-posts">
+
+  <div class="section-title">
+    <h2><span>All Stories</span></h2>
+  </div>
+  
+  <div class="row">
+  {% for post in paginator.posts %} 
+    {% include post-card.html %}
+  {% endfor %}
+  </div>
+  
+</section>
+
+<!-- pagination 
+================================================== -->
+
+{% include pagination.html %} 
+  
+
+<!--
+You can use HTML elements in Markdown, such as the comment element, and they won't be affected by a markdown parser. However, if you create an HTML element in your markdown file, you cannot use markdown syntax within that element's contents.
+-->

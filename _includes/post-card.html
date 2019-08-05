@@ -1,0 +1,9 @@
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+<div class="card">
+<img class="card-img-top" src="{{post.image-url | prepend: site.baseurl}}" alt="{{post.alt-img}}">
+<div class="card-body">
+<a href="{{post.url | prepend: site.baseurl}}"><h4>{{post.title}}</h4></a>
+{{post.short-description | truncatewords:25}}
+</div>
+</div>
+</div>

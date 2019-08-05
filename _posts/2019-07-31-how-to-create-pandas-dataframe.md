@@ -2,13 +2,22 @@
 title: Create Pandas dataframe
 description: How to create python pandas dataframe, create pandas dataframe from list, create pandas dataframe from dict, create pandas dataframe from Numpy, create dataframe from csv, create dataframe from excel
 layout: content
+categories: pandas
+featured: false 
+image-url: /images/pandas.jpg
+alt-img: Pandas dataframe
+short-description: "Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). 
+Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects. A pandas DataFrame can be created using various inputs like List, dict, Series, Numpy ndarray or another dataframe"
 ---
+<h3 style="padding-top: 60px; margin-top: -40px;">How to create Pandas Dataframe</h3>
 
-### Pandas Dataframe
-A Data frame is a two-dimensional data structure, i.e data is arranged in rows and columns. It is much like tables in SQL or Excel, it supports operations like aggregation, filtering, and pivoting. DataFrame operations are fast, even over large datasets. 
+Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects. 
 
-<br>
-### 1. Create a DataFrame from List
+It is much like tables in SQL or Excel, it supports operations like aggregation, filtering, and pivoting. DataFrame operations are fast, even over large datasets.
+
+A pandas DataFrame can be created using various inputs like List, dict, Series, Numpy ndarray or another dataframe"
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Create a DataFrame from List</h3>
 The DataFrame can be created using a python list.
 
 {%
@@ -51,7 +60,7 @@ output="
 %}
 
 
-### 2. Create a DataFrame from List of Lists
+<h3 style="padding-top: 60px; margin-top: -40px;">Create a DataFrame from List of Lists</h3>
 The DataFrame can be created using a python list of python lists.
 
 {%
@@ -89,7 +98,7 @@ output="
 </table>"
 %}
 
-### 3. Create a DataFrame from Dictionaries
+<h3 style="padding-top: 60px; margin-top: -40px;">Create a DataFrame from Dictionaries</h3>
 The DataFrame can be created using a list of python dictionaries. Column names will be the dictionary key and values will be list items. 
 
 {% include jupyter-html.html
@@ -140,7 +149,7 @@ output="
 %}
 
 
-### 4. Create a DataFrame from Numpy array
+<h3 style="padding-top: 60px; margin-top: -40px;">Create a DataFrame from Numpy array</h3>
 The DataFrame can be created using numpy arrays. 
 
 {% include jupyter-html.html 

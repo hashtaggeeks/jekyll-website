@@ -1,0 +1,15 @@
+<nav id="toc" data-toggle="hashtaggeeks" class="sticky-top">
+
+<div class="card bg-light">
+
+<div class="card card-body bg-light">
+<h5 class="card-title" href="{{'/' | prepend: site.baseurl}}"> Topics </h5>
+<ul class="nav navbar-nav">
+{% for menu in site.data.data.side-menu %}
+  <li>
+    <a class="nav-link" href="{{menu.url | prepend: site.baseurl}}"> {{ menu.topic }} </a>
+  </li>
+{% endfor %}
+</div>
+</div>
+</nav>

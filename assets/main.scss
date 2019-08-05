@@ -1,6 +1,92 @@
 ---
 ---
 
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.article-post .h1,
+.article-post .h2,
+.article-post .h3,
+.article-post .h4,
+.article-post .h5,
+.article-post .h6,
+.article-post h1,
+.article-post h2,
+.article-post h3,
+.article-post h4,
+.article-post h5,
+.article-post h6 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.article-post img.shadow {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+}
+
+.layout-page .article-post {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+}
+
+.layout-page .article-post p {
+    margin-bottom: 1rem;
+}
+
+.mb-30px {
+    margin-bottom: 30px;
+}
+
+.bottompagination span.navigation {
+    display: block;
+    font-size: 0.93rem;
+    padding: 15px 0 0 0;
+    text-align: center;
+    margin-bottom: 0rem;
+    color: #999;
+    border-top: 1px solid #ddd;
+}
+
+.bottompagination span.navigation i {
+    display: inline-block;
+}
+
+.pagination-square-container {
+  text-align: center;
+}
+
+.pagination-box-container {
+  display: inline-block;
+}
+
+span.navigation {
+    display: inline-block;
+    font-size: 0.93rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pointerup {
+    margin-bottom: -17px;
+    margin-left: 49%;
+    font-size: 30px;
+}
+
+.pagination {
+    display: block;
+}
+
+.pointerup i.fa {
+    color: #eaeaea;
+}
+
+#navbar {
+  transition: top 0.4s; /* Transition effect when sliding down (and up) */
+}
+
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome/scss/font-awesome";
@@ -12,6 +98,18 @@
  
 .table-responsive {
     font-size:13px !important;
+}
+
+nav[data-toggle="hashtaggeeks"] .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #767676;
+}
+
+nav[data-toggle="hashtaggeeks"]{
+  top: 100px;
 }
 
 nav[data-toggle="toc"] {

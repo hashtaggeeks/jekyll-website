@@ -1,0 +1,13 @@
+{
+   "side-menu":[
+      {
+         "topic":"Python",
+         "url":"/topics/python/index.html"
+      },
+      {
+         "topic":"Pandas",
+         "url":"/topics/pandas/index.html"
+      }
+
+   ]
+}

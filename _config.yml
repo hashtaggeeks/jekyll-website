@@ -1,4 +1,4 @@
-url: http://hashtaggeeks.com
+url: 
 baseurl: /jekyll-website
 sass:
   load_paths:
@@ -10,3 +10,16 @@ exclude:
   - package.json
   - package-lock.json
   - Readme.txt
+plugins: [jekyll-paginate-v2]
+permalink: /posts/:title.html
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/page:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2 # The number of links before the current page
+    after: 2  # The number of links after the current page
