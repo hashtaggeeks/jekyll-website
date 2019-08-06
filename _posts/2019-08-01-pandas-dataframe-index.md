@@ -1,6 +1,6 @@
 ---
-title: Pandas Index
-description: what is pandas dataframe index, how to create dataframe with custom index, rename the index column, set index column, how to reset index, how to reindex
+title: Pandas Dataframe Index
+description: What is pandas dataframe index, how to create dataframe with custom index, rename the index column, set index column, how to reset index, how to reindex
 layout: content
 categories: pandas
 featured: false 
@@ -10,7 +10,7 @@ short-description: "Dataframe index is the address to access rows. The default i
 Index can be set during the dataframe creation or can be changed later using set_index or reset_index methods"
 ---
 
-<h3 style="padding-top: 60px; margin-top: -40px;">Pandas dataframe index</h3>
+<h1 style="padding-top: 60px; margin-top: -40px;">Pandas Dataframe Index</h1>
 
 Dataframe index is the address to access rows. The default index created by the dataframe is RangeIndex of int64.
 

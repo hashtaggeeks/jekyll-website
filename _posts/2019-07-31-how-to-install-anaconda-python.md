@@ -1,6 +1,6 @@
 ---
 title: How To Install Anaconda Python
-description: download anaconda, install anaconda python in linux machines. anaconda installer, run jupyter notebook, verify anaconda installation.
+description: Step by step guide to donwload and install anaconda python in linux. Verify the anaconda installation and setup python jupyter notebook
 layout: content
 categories: python pandas
 featured: true 
@@ -9,7 +9,7 @@ alt-img: anaconda-python
 short-description: "Designed for data science and machine learning workflows, <a href='https://www.anaconda.com' target='_blank'>Anaconda</a> is an open-source package manager, environment manager, and distribution of the <a href='https://www.python.org/' target='_blank'>Python</a> and <a href='https://www.r-project.org/' target='_blank'>R</a> programming languages."
 ---
 
-<h3 style="padding-top: 60px; margin-top: -40px;">How To Install Anaconda on Linux</h3>
+<h1 style="padding-top: 60px; margin-top: -40px;">How To Install Anaconda on Linux</h1>
 
 <a href="https://www.anaconda.com/" target="_blank">Anaconda</a> is an open-source package manager, environment manager, it is designed for data science and machine learning workflows. Anaconda offers collection of packages designed for normal programming to large scale data science and statistical analysis projects.
 

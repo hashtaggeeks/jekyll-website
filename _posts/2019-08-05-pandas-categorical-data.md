@@ -1,6 +1,6 @@
 ---
-title: Pandas Categorical data
-description: what is pandas categorical data, how to create catogeries in pandas, Categorical Datatype, CategoricalDtype, Working with pandas categories, Renaming categories, add new categories
+title: Pandas Categorical Data
+description: What is pandas categorical data, how to create catogeries in pandas, Categorical Datatype, CategoricalDtype, Working with pandas categories, Renaming categories, add new categories
 layout: content
 categories: pandas
 featured: false 
@@ -9,7 +9,7 @@ alt-img: Pandas dataframe index
 short-description: "Categoricals are a pandas data type corresponding to categorical variables in statistics. A categorical variable takes on a limited, and usually fixed, number of possible value. Examples are gender, continent, direction"
 ---
 
-<h3 style="padding-top: 60px; margin-top: -40px;">Pandas Categorical Datatype </h3>
+<h1 style="padding-top: 60px; margin-top: -40px;">Pandas Categorical Datatype </h1>
 
 Categoricals are a pandas data type corresponding to categorical variables in statistics. A categorical variable takes on a limited, and usually fixed, number of possible values.
 

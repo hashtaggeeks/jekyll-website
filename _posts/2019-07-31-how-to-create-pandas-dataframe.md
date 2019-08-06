@@ -1,6 +1,6 @@
 ---
-title: Create Pandas dataframe
-description: How to create python pandas dataframe, create pandas dataframe from list, create pandas dataframe from dict, create pandas dataframe from Numpy, create dataframe from csv, create dataframe from excel
+title: How to create Pandas dataframe
+description: Create pandas dataframe from list, create pandas dataframe from dict, create pandas dataframe from Numpy, create dataframe from csv, create dataframe from excel
 layout: content
 categories: pandas
 featured: false 
@@ -9,7 +9,7 @@ alt-img: Pandas dataframe
 short-description: "Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). 
 Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects. A pandas DataFrame can be created using various inputs like List, dict, Series, Numpy ndarray or another dataframe"
 ---
-<h3 style="padding-top: 60px; margin-top: -40px;">How to create Pandas Dataframe</h3>
+<h1 style="padding-top: 60px; margin-top: -40px;">How to create Pandas Dataframe</h1>
 
 Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects. 
 
