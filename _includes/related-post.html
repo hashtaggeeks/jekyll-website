@@ -1,0 +1,17 @@
+<div class="card bg-light">
+<div class="card card-body bg-light">
+<h5 class="card-title"> Related Posts </h5>
+<ul class="nav navbar-nav">
+{% assign posts = include.input | split: '|' %}
+
+{% for p in posts | split: ',' %}
+
+{% assign i = p | split: ',' %}
+
+
+<li><a class="nav-link" href='/posts/{{i[0]}}'>{{i[1]}}</a></li>
+
+{% endfor %}
+</ul>
+</div>
+</div>

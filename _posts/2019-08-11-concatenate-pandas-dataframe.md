@@ -10,6 +10,13 @@ alt-img: Pandas dataframe index
 short-description: The concat() function (in the main pandas namespace) does all of the heavy lifting of performing concatenation operations along an axis while performing optional set logic (union or intersection) of the indexes (if any) on the other axes. Note that I say “if any” because there is only a single possible axis of concatenation for Series.
 ---
 
+{%
+include related-post.html
+input = 
+'how-to-create-pandas-dataframe.html,1. How to create pandas dataframe|
+pandas-dataframe-index.html,2. Pandas dataframe Index'
+%}
+
 <h1 style="padding-top: 60px; margin-top: -40px;">Concatenate Pandas Dataframes </h1>
 
 The concat() function performs concatenation operations along an axis while performing optional set logic (union or intersection) of the indexes (if any) on the other axes. 

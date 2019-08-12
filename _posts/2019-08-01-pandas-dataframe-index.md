@@ -10,6 +10,13 @@ short-description: "Dataframe index is the address to access rows. The default i
 Index can be set during the dataframe creation or can be changed later using set_index or reset_index methods"
 ---
 
+{%
+include related-post.html
+input = 
+'how-to-create-pandas-dataframe.html,1. How to create pandas dataframe'
+%}
+
+
 <h1 style="padding-top: 60px; margin-top: -40px;">Pandas Dataframe Index</h1>
 
 Dataframe index is the address to access rows. The default index created by the dataframe is RangeIndex of int64.

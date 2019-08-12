@@ -9,6 +9,14 @@ alt-img: Pandas dataframe
 short-description: "Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). 
 Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects. A pandas DataFrame can be created using various inputs like List, dict, Series, Numpy ndarray or another dataframe"
 ---
+
+{%
+include related-post.html
+input = 
+'how-to-install-anaconda-python.html,1. How to install anaconda python'
+%}
+
+
 <h1 style="padding-top: 60px; margin-top: -40px;">How to create Pandas Dataframe</h1>
 
 Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects. 

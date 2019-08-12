@@ -9,6 +9,14 @@ alt-img: Pandas dataframe index
 short-description: "Categoricals are a pandas data type corresponding to categorical variables in statistics. A categorical variable takes on a limited, and usually fixed, number of possible value. Examples are gender, continent, direction"
 ---
 
+{%
+include related-post.html
+input = 
+'how-to-create-pandas-dataframe.html,1. How to create pandas dataframe|
+pandas-dataframe-index.html,2. Pandas dataframe Index'
+%}
+
+
 <h1 style="padding-top: 60px; margin-top: -40px;">Pandas Categorical Datatype </h1>
 
 Categoricals are a pandas data type corresponding to categorical variables in statistics. A categorical variable takes on a limited, and usually fixed, number of possible values.
