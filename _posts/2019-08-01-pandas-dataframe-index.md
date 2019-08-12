@@ -1,6 +1,6 @@
 ---
 title: Pandas Dataframe Index
-description: What is pandas dataframe index, how to create dataframe with custom index, rename the index column, set index column, how to reset index, how to reindex
+description: Pandas Dataframe Index, how to index pandas dataframe.
 layout: content
 categories: pandas
 featured: false 

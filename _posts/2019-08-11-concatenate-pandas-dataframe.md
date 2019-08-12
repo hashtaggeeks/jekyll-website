@@ -1,6 +1,6 @@
 ---
 title: Concatenate Dataframes in Pandas 
-description: The concat() function (in the main pandas namespace) does all of the heavy lifting of performing concatenation operations along an axis while performing optional set logic (union or intersection) of the indexes (if any) on the other axes. Note that I say “if any” because there is only a single possible axis of concatenation for Series.
+description: Concatenate Dataframes in Pandas
 layout: content
 date: 2019-08-11
 categories: pandas

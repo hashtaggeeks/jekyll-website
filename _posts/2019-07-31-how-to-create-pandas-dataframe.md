@@ -1,6 +1,6 @@
 ---
 title: How to create Pandas dataframe
-description: Create pandas dataframe from list, create pandas dataframe from dict, create pandas dataframe from Numpy, create dataframe from csv, create dataframe from excel
+description: How to create Pandas dataframe. Dataframe creation from list,dict, Numpy, csv, excel
 layout: content
 categories: pandas
 featured: false 

@@ -1,6 +1,6 @@
 ---
 title: How To Install Anaconda Python
-description: Step by step guide to download and install anaconda python in linux. Verify the anaconda installation and setup python jupyter notebook
+description: How To Install Anaconda Python, download and install anaconda python.
 layout: content
 categories: python pandas
 featured: false 
