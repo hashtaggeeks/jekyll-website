@@ -1,6 +1,6 @@
 ---
 title: Pandas Categorical Data
-description: What is pandas categorical data, how to create categories in pandas, Categorical Datatype, CategoricalDtype, Working with pandas categories, Renaming categories, add new categories
+description: Python Pandas - Categorical Data, CategoricalDtype
 layout: content
 categories: pandas
 featured: true 
