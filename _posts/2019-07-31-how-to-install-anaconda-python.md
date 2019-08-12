@@ -1,9 +1,9 @@
 ---
 title: How To Install Anaconda Python
-description: Step by step guide to donwload and install anaconda python in linux. Verify the anaconda installation and setup python jupyter notebook
+description: Step by step guide to download and install anaconda python in linux. Verify the anaconda installation and setup python jupyter notebook
 layout: content
 categories: python pandas
-featured: true 
+featured: false 
 image-url: /images/anaconda.jpg
 alt-img: anaconda-python
 short-description: "Designed for data science and machine learning workflows, <a href='https://www.anaconda.com' target='_blank'>Anaconda</a> is an open-source package manager, environment manager, and distribution of the <a href='https://www.python.org/' target='_blank'>Python</a> and <a href='https://www.r-project.org/' target='_blank'>R</a> programming languages."
@@ -17,7 +17,7 @@ Anaconda comes with a desktop graphical user interface (GUI) program called **<a
 
 Anaconda distribution includes <a href="https://conda.io/" target="_blank">Conda</a> package manager, which helps to search and install 1000's of packages with ease.
 
-Below is the step by step guide to insatall Anaconda in Linux.
+Below is the step by step guide to install Anaconda in Linux.
 
 <h3 style="padding-top: 60px; margin-top: -40px;">Prerequisites</h3>
 Machine should have a non-root user with sudo privileges set up before proceeding with the steps below.
@@ -37,7 +37,7 @@ krish
 
 <h3 style="padding-top: 60px; margin-top: -40px;">Check the Latest Version of Anaconda</h3>
 
-Head over to <a href="https://www.anaconda.com/distribution/" target="_blank"> https://www.anaconda.com/distribution/</a>, once you are there, click on **Linux** and select the Python version of your preferece to **/temp** folder. or use curl or wget to download the verision from <a href="https://repo.anaconda.com/archive/" target="_blank">https://repo.anaconda.com/archive/
+Head over to <a href="https://www.anaconda.com/distribution/" target="_blank"> https://www.anaconda.com/distribution/</a>, once you are there, click on **Linux** and select the Python version of your preference to **/temp** folder. or use curl or wget to download the version from <a href="https://repo.anaconda.com/archive/" target="_blank">https://repo.anaconda.com/archive/
 
 <div class="card">
 <div class="card-body ">
@@ -104,9 +104,9 @@ Anaconda3 will now be installed into this location:
 </div>
 
 
-<h3 style="padding-top: 60px; margin-top: -40px;">Finish the installlation process</h3>
+<h3 style="padding-top: 60px; margin-top: -40px;">Finish the installation process</h3>
 
-Installation will take time, wait for the insttlation process to finish.
+Installation will take time, wait for the instillation process to finish.
 
 <div class="card">
 <div class="card-body ">
@@ -130,7 +130,7 @@ to PATH in your /home/krish/.bashrc ? [yes|no]
 </div>
 </div>
 <br>
-Type yes to use the **conda** command. This is recommmended
+Type yes to use the **conda** command. This is recommended
 
 <h3 style="padding-top: 60px; margin-top: -40px;">Validate the installation</h3>
 

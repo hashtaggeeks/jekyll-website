@@ -340,7 +340,7 @@ output="<table border=\"1\" class=\"dataframe\">
 
 <h3 style="padding-top: 60px; margin-top: -40px;">Set pandas dataframe index</h3>
 
-Change the index of dataframe using the columns available in the frame. By default it will yield and new dataframe. **inplace** parameter can be used to modify the dataframe in plave to avoid creating new dataframe.
+Change the index of dataframe using the columns available in the frame. By default it will yield and new dataframe. **inplace** parameter can be used to modify the dataframe in place to avoid creating new dataframe.
 
 {% include jupyter-html.html
 input="dept={
@@ -440,9 +440,9 @@ output="<table border=\"1\" class=\"dataframe\">
 
 <h3 style="padding-top: 60px; margin-top: -40px;">Reindex pandas dataframe</h3>
 
-Reindexing (**pandas.DataFrame.reindex**) will change the DataFrame row and column labels. To reindex means to conform the data to match a given set of labels along a particular axis.
+Re-indexing (**pandas.DataFrame.reindex**) will change the DataFrame row and column labels. To reindex means to conform the data to match a given set of labels along a particular axis.
 
-Reindexing conform DataFrame to new index with optional filling logic, placing NA/NaN in locations having no value in the previous index. A new object is produced unless the new index is equivalent to the current one and copy=False
+Re-indexing conform DataFrame to new index with optional filling logic, placing NA/NaN in locations having no value in the previous index. A new object is produced unless the new index is equivalent to the current one and copy=False
 
 {% include jupyter-html.html
 input="index = [10,20,30,40]
