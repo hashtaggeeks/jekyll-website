@@ -1,0 +1,431 @@
+<html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6236497625449277",
+    enable_page_level_ads: true
+  });
+</script>        
+<title>
+ Python Conditions and Loops 
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Python, conditional execution, if then elif, boolean expressions, logical operator, guardian pattern, nested conditions, while statement, while loop, infinite loop,continue, for loop, guardian pattern, counter">.
+<meta http-equiv="content-language" content="en">
+<link rel="canonical" href="https://hashtaggeeks.com/posts/python-conditions-loops.html">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Conditions and Loops">
+<meta property="og:url" content="https://hashtaggeeks.com/posts/python-conditions-loops.html"> 
+<meta property="og:site_name" content="Python Pandas Tutorial">
+<meta property="article:publisher" content="https://hashtaggeeks.com" />
+<meta property="article:author" content="https://hashtaggeeks.com" />
+<meta property="article:published_time" content="2019-08-17 00:00:00 -0400" />
+<meta property="og:description" content="Python, conditional execution, if then elif, boolean expressions, logical operator, guardian pattern, nested conditions, while statement, while loop, infinite loop,continue, for loop, guardian pattern, counter">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Conditions and Loops">
+<meta name="twitter:description" content="Python, conditional execution, if then elif, boolean expressions, logical operator, guardian pattern, nested conditions, while statement, while loop, infinite loop,continue, for loop, guardian pattern, counter">
+<meta name="twitter:domain" content="https://hashtaggeeks.com" />
+<meta name="twitter:image" content="https://hashtaggeeks.com/images/conditions-loops.png" />
+<meta name="twitter:site" content="@hashtaggeeks" />
+<meta name="twitter:creator" content="@hashtaggeeks">
+<!-- site css -->
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/syntax-style.css">
+<link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+
+</head>
+<body class="pt-5" data-spy="scroll">
+    <main role="main">
+        <div class="container-fluid">
+            <header>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand" href="/">HashtagGeeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
+  </div>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-conditions-loops.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-conditions-loops.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-conditions-loops.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
+</header>
+            <br>
+            <div class="row">
+                <div class="col-xl-2 d-none d-lg-block">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>                    
+                <div class="col-xl-8">
+                    <div class="card bg-light">
+<div class="card card-body bg-light">
+<h5 class="card-title"> Related Posts </h5>
+<ul class="nav navbar-nav">
+
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/how-to-install-anaconda-python.html">1. How to install anaconda python</a></li>
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/
+python-basics-hello-world.html">2. Python Basics Hello World</a></li>
+
+
+</ul>
+</div>
+</div>
+
+<h1 style="padding-top: 60px; margin-top: -40px;">Python Conditions and Loops</h1>
+
+<p>Python conditional statement <strong>if elif else</strong> statement provides the ability to check conditions and change the behavior of the program. Conditions in Python can be chained and nested to create different behaviors.</p>
+
+<p>Python has three logical operators: <strong>and, or, and not</strong>. Python evaluates logical expression from left to right, each expression is evaluated to True or False before proceeding to the next. When Python detects that there is nothing to be gained by evaluating the rest
+of a logical expression, it stops its evaluation and does not do the computations in the rest of the logical expression. When the evaluation of a logical expression stops because the overall value is already known, it is called short-circuiting the evaluation</p>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Python Boolean</h3>
+<p>A boolean in Python is either <strong>True</strong> or <strong>False</strong>. True and False are special values that belong to the class bool; they are not strings.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">type</span><span class="p">(</span><span class="nx">True</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="kd">class</span> <span class="dl">'</span><span class="s1">bool</span><span class="dl">'</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">type</span><span class="p">(</span><span class="nx">False</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="kd">class</span> <span class="dl">'</span><span class="s1">bool</span><span class="dl">'</span><span class="o">&gt;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">var1</span> <span class="o">=</span> <span class="nx">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">type</span><span class="p">(</span><span class="nx">var1</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="kd">class</span> <span class="dl">'</span><span class="s1">bool</span><span class="dl">'</span><span class="o">&gt;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="dl">"</span><span class="s2">john</span><span class="dl">"</span> <span class="o">==</span> <span class="dl">"</span><span class="s2">John</span><span class="dl">"</span>
+<span class="nx">False</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="dl">"</span><span class="s2">john</span><span class="dl">"</span> <span class="nx">is</span> <span class="nx">not</span> <span class="dl">"</span><span class="s2">John</span><span class="dl">"</span>
+<span class="nx">True</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">10</span> <span class="o">&gt;=</span> <span class="mi">8</span>
+<span class="nx">True</span></code></pre></figure>
+
+</div>
+</div>
+
+<p><br />
+Python Comparison operators</p>
+
+<table class="responsive">
+  <tbody>
+    <tr> 
+      <td>x != y</td>
+      <td>x is not equal to y</td> 
+    </tr>
+    <tr> 
+      <td>x &gt; y</td>
+      <td>x is greater than y</td> 
+    </tr>
+    <tr> 
+      <td>x &lt; y</td>
+      <td>x is less than y</td> 
+    </tr>
+    <tr> 
+      <td>x &gt;= y</td>
+      <td>x is greater than or equal to y</td> 
+    </tr>
+    <tr> 
+      <td>x &lt;= y</td>
+      <td>x is less than or equal to y</td> 
+    </tr>
+    <tr> 
+      <td>x is y</td>
+      <td>x is the same as y</td> 
+    </tr>
+    <tr> 
+      <td>x is not y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td>x is not the same as y</td> 
+    </tr>            
+  </tbody>
+</table>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Logical operators</h3>
+
+<p>The three logical operators available in Python are <strong>and, or, and not</strong>. The meaning of the operators are similar to their English meaning. not operator negates a boolean expression</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">True</span> <span class="nx">and</span> <span class="nx">True</span>
+<span class="nx">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">True</span> <span class="nx">and</span> <span class="nx">False</span>
+<span class="nx">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">False</span> <span class="nx">and</span> <span class="nx">False</span>
+<span class="nx">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">True</span> <span class="nx">or</span> <span class="nx">True</span>
+<span class="nx">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">True</span> <span class="nx">or</span> <span class="nx">False</span>
+<span class="nx">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">False</span> <span class="nx">or</span> <span class="nx">False</span>
+<span class="nx">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">100</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="nx">and</span> <span class="mi">100</span> <span class="o">&lt;</span> <span class="mi">150</span>
+<span class="nx">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">100</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="nx">or</span> <span class="mi">100</span> <span class="o">&gt;</span> <span class="mi">150</span>
+<span class="nx">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">not</span> <span class="mi">100</span> <span class="o">&gt;</span> <span class="mi">150</span>
+<span class="nx">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">100</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="nx">and</span> <span class="nx">not</span> <span class="mi">100</span> <span class="o">&gt;</span> <span class="mi">150</span>
+<span class="nx">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">True</span> <span class="nx">and</span> <span class="nx">not</span> <span class="nx">False</span>
+<span class="nx">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="dl">'</span><span class="s1">John</span><span class="dl">'</span> <span class="nx">and</span> <span class="mi">33</span> <span class="nx">and</span> <span class="nx">True</span>
+<span class="nx">True</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Conditional execution</h3>
+
+<p>Conditions gives program the ability to change the behavior of the code execution.</p>
+
+<p>If the logical condition is true, then the indented statement gets executed. If the logical condition is false, the indented statement is skipped. if statements have the same structure as function definitions or for loops.</p>
+
+<p>The statement consists of a header line that ends with the colon character (:) followed by an indented block. Statements like this are called compound statements because they stretch across more than one line. There is no limit on the number of statements that can appear in the body, but there must be at least one</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">result</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">expression</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="k">if</span> <span class="o">&lt;</span><span class="nx">condition</span><span class="o">&gt;</span> <span class="k">else</span> <span class="o">&lt;</span><span class="nx">expression</span> <span class="mi">2</span><span class="o">&gt;</span>
+
+<span class="nx">or</span>
+
+<span class="k">if</span> <span class="o">&lt;</span><span class="nx">condition</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="nx">expression</span><span class="o">&gt;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="nx">expression</span><span class="o">&gt;</span></code></pre></figure>
+
+</div>
+</div>
+
+<p><br /></p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="nx">x</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nx">print</span><span class="p">(</span><span class="dl">"</span><span class="s2">x is even</span><span class="dl">"</span><span class="p">)</span> 
+<span class="nx">x</span> <span class="nx">is</span> <span class="nx">even</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="nx">x</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nx">print</span><span class="p">(</span><span class="dl">"</span><span class="s2">x is even</span><span class="dl">"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nx">print</span><span class="p">(</span><span class="dl">"</span><span class="s2">x is odd</span><span class="dl">"</span><span class="p">)</span> 
+<span class="nx">x</span> <span class="nx">is</span> <span class="nx">odd</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Chained and Nested execution</h3>
+
+<p>To handle multiple conditions Python provides <strong>elif</strong>. There is no limit on the number of elif statements. If there is an else clause, it
+has to be at the end. In Python else is not mandatory. 
+Python does not have switch statement, nesting and chaining of if-else-if blocks are the solution in Python.</p>
+
+<p>Each condition is checked in order. If the first is false, the next is checked, and so on. If one of them is true, the corresponding branch executes, and the statement execution ends. Even if more than one condition is true, only the first true branch executed.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># Chained Condition</span>
+<span class="k">if </span>condition1:
+    Statement1
+<span class="k">elif </span>condition2:
+    Statement2
+<span class="k">else</span>:
+    Statement3
+
+
+<span class="c"># Nested Condition</span>
+<span class="k">if </span>condition1:
+    <span class="k">if </span>condition11:
+        Statement11
+<span class="k">elif </span>condition2:
+    <span class="k">if </span>condition21:
+        Statement21
+    <span class="k">else</span>:
+        Stetement22
+<span class="k">else</span>:
+    Statement3</code></pre></figure>
+
+</div>
+</div>
+
+<p><br /></p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">&gt;&gt;&gt;</span> <span class="nv">color</span><span class="o">=</span><span class="s2">"red"</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if </span>color <span class="o">==</span> <span class="s2">"blue"</span>:
+        print<span class="o">(</span><span class="s2">"Blue color"</span><span class="o">)</span>
+    <span class="k">elif </span>color <span class="o">==</span> <span class="s2">"green"</span>:
+        print<span class="o">(</span><span class="s2">"Green color"</span><span class="o">)</span>
+    <span class="k">elif </span>color <span class="o">==</span> <span class="s2">"red"</span>:
+        print<span class="o">(</span><span class="s2">"Red color"</span><span class="o">)</span>
+    <span class="k">else</span>:
+        print<span class="o">(</span><span class="s2">"No color"</span><span class="o">)</span>
+Red color
+
+<span class="nv">drink</span><span class="o">=</span><span class="s2">"coffee"</span>
+<span class="nv">sugar</span><span class="o">=</span>True
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if </span>drink <span class="o">==</span> <span class="s2">"coffee"</span>:
+        <span class="k">if </span>sugar:
+            print<span class="o">(</span><span class="s2">"sweet coffee"</span><span class="o">)</span>
+        <span class="k">else</span>:
+            print<span class="o">(</span><span class="s2">"black coffee"</span><span class="o">)</span>
+    <span class="k">elif </span>drink <span class="o">==</span> <span class="s2">"tea"</span>:
+        <span class="k">if </span>sugar:
+            print<span class="o">(</span><span class="s2">"sweet tea"</span><span class="o">)</span>
+        <span class="k">else</span>:
+            print<span class="o">(</span><span class="s2">"black tea"</span><span class="o">)</span>
+    
+sweet coffee</code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Python Short-circuit evaluation</h3>
+
+<p>Short-circuiting is where an expression is stopped being evaluated as soon as its outcome is determined. When Python detects that there is nothing to be gained by evaluating the rest of a logical expression, it stops its evaluation and does not do the computations in the rest of the logical expression.</p>
+
+<p>In case of <strong>or</strong> conditions when in True condition is encountered, the rest of condition evaluation is ignored since the expression outcome has been determined.</p>
+
+<p>In case of <strong>and</strong> statement when in False condition is encountered, the rest of condition evaluation is ignored since the expression outcome has been determined.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">&gt;&gt;&gt;</span> 10 <span class="o">&gt;</span> 20 and 20 &lt; 40
+False
+<span class="o">&gt;&gt;&gt;</span> 10 <span class="o">&gt;</span> 20 and 0/0
+False
+<span class="o">&gt;&gt;&gt;</span> <span class="c"># python ignored the division by zero since the first condition is False</span>
+
+
+<span class="o">&gt;&gt;&gt;</span> 10 &lt; 20 and 0/0
+Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+  File <span class="s2">"&lt;stdin&gt;"</span>, line 1, <span class="k">in</span> &lt;module&gt;
+ZeroDivisionError: division by zero
+<span class="o">&gt;&gt;&gt;</span></code></pre></figure>
+
+</div>
+</div>
+
+                </div>
+                <div class="col-xl-2">
+                    
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-conditions-loops.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-conditions-loops.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-conditions-loops.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="https://hashtaggeeks.com"> hashtaggeeks.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+        </div>
+    </main>
+<script src="/assets/vendor/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap-toc.min.js"></script>
+
+</body>
+</html>
