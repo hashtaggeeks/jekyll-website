@@ -4,7 +4,7 @@ description: How to create Pandas dataframe. Dataframe creation from list,dict, 
 layout: content
 categories: pandas
 featured: false 
-image-url: /images/pandas.jpg
+image-url: /images/pandas-dataframe.jpg
 alt-img: Pandas dataframe
 short-description: "Pandas dataframe is a 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). 
 Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects. A pandas DataFrame can be created using various inputs like List, dict, Series, Numpy ndarray or another dataframe"

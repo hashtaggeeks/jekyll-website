@@ -4,7 +4,7 @@ description: Pandas Dataframe Index, how to index pandas dataframe.
 layout: content
 categories: pandas
 featured: false 
-image-url: /images/dataframe-index.png
+image-url: /images/dataframe-index.jpg
 alt-img: Pandas dataframe index
 short-description: "Dataframe index is the address to access rows. The default index created by the dataframe is RangeIndex of int64.
 Index can be set during the dataframe creation or can be changed later using set_index or reset_index methods"

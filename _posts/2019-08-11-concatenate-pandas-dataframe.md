@@ -5,8 +5,8 @@ layout: content
 date: 2019-08-11
 categories: pandas
 featured: true 
-image-url: /images/pandas-joins.png
-alt-img: Pandas dataframe index
+image-url: /images/dataframe-concatenation.jpg
+alt-img: Pandas dataframe concatenation
 short-description: The concat() function (in the main pandas namespace) does all of the heavy lifting of performing concatenation operations along an axis while performing optional set logic (union or intersection) of the indexes (if any) on the other axes. Note that I say “if any” because there is only a single possible axis of concatenation for Series.
 ---
 

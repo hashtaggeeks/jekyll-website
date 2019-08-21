@@ -5,7 +5,7 @@ layout: content
 date: 2019-08-17
 categories: python
 featured: false 
-image-url: /images/python-hello-world.png
+image-url: /images/python-hello-world.jpg
 alt-img: Python Hello World
 short-description: Python is a minimalistic programming language. Python is open source and is available in almost all platforms. Python is an interpreted language, python code can execute directly from the source code. Python supports procedure-oriented programming as well as object-oriented programming. Python libraries helps in developing database applications, web applications and many more.
 ---
