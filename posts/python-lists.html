@@ -1,0 +1,384 @@
+<html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6236497625449277",
+    enable_page_level_ads: true
+  });
+</script>        
+<title>
+ Python Lists 
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Python Lists, Python list, Python collection, Python Arrays, Python collection data types, list add, list remove, list pop(), delete list, Python copy list, list methods">.
+<meta http-equiv="content-language" content="en">
+<link rel="canonical" href="https://hashtaggeeks.com/posts/python-lists.html">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Lists">
+<meta property="og:url" content="https://hashtaggeeks.com/posts/python-lists.html"> 
+<meta property="og:site_name" content="Python Pandas Tutorial">
+<meta property="article:publisher" content="https://hashtaggeeks.com" />
+<meta property="article:author" content="https://hashtaggeeks.com" />
+<meta property="article:published_time" content="2019-08-21 00:00:00 -0400" />
+<meta property="og:description" content="Python Lists, Python list, Python collection, Python Arrays, Python collection data types, list add, list remove, list pop(), delete list, Python copy list, list methods">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Lists">
+<meta name="twitter:description" content="Python Lists, Python list, Python collection, Python Arrays, Python collection data types, list add, list remove, list pop(), delete list, Python copy list, list methods">
+<meta name="twitter:domain" content="https://hashtaggeeks.com" />
+<meta name="twitter:image" content="https://hashtaggeeks.com/images/python-lists.jpg" />
+<meta name="twitter:site" content="@hashtaggeeks" />
+<meta name="twitter:creator" content="@hashtaggeeks">
+<!-- site css -->
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/syntax-style.css">
+<link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+
+</head>
+<body class="pt-5" data-spy="scroll">
+    <main role="main">
+        <div class="container-fluid">
+            <header>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand" href="/">HashtagGeeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
+  </div>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-lists.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-lists.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-lists.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
+</header>
+            <br>
+            <div class="row">
+                <div class="col-xl-2 d-none d-lg-block">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>                    
+                <div class="col-xl-8">
+                    <div class="card bg-light">
+<div class="card card-body bg-light">
+<h5 class="card-title"> Related Posts </h5>
+<ul class="nav navbar-nav">
+
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/python-string-operation-formatting.html">1. Python Strings</a></li>
+
+
+</ul>
+</div>
+</div>
+
+<h1 style="padding-top: 60px; margin-top: -40px;">Python Lists</h1>
+
+<p>Python lists are object that represents an ordered set of objects. A list can hold any Python object, the elements of a list do not all have to be of the same type. Pythion list is similar to a string, except a string can hold only characters.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">type</span><span class="p">(</span><span class="nx">lst</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="kd">class</span> <span class="dl">'</span><span class="s1">list</span><span class="dl">'</span><span class="o">&gt;</span></code></pre></figure>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Creating Lists</h3>
+
+<p>There are multiple ways to create Lists in Python.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="dl">"</span><span class="s2">Python</span><span class="dl">"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="mf">100.25</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span><span class="p">.</span><span class="nx">append</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span>
+<span class="p">[</span><span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Python</span><span class="dl">'</span><span class="p">,</span> <span class="mf">100.25</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">hello from python lists</span><span class="dl">"</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span>
+<span class="p">[</span><span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">from</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">lists</span><span class="dl">'</span><span class="p">]</span>
+
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">first</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">last</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1"> Thomas</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span> <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span><span class="mi">2000</span><span class="p">,</span> <span class="dl">'</span><span class="s1">job</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">Developer</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">keyList</span> <span class="o">=</span> <span class="nx">list</span><span class="p">(</span><span class="nx">emp</span><span class="p">.</span><span class="nx">keys</span><span class="p">())</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">valList</span> <span class="o">=</span> <span class="nx">list</span><span class="p">(</span><span class="nx">emp</span><span class="p">.</span><span class="nx">values</span><span class="p">())</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">keyList</span>
+<span class="p">[</span><span class="dl">'</span><span class="s1">first</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">last</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">job</span><span class="dl">'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">valList</span>
+<span class="p">[</span><span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1"> Thomas</span><span class="dl">'</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Developer</span><span class="dl">'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span> <span class="o">=</span> <span class="p">[</span><span class="nx">x</span> <span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">,</span><span class="mi">100</span><span class="p">)]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">lst</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="mi">800</span><span class="p">,</span> <span class="mi">900</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Slicing Lists</h3>
+
+<p>Lists are indexed by integers, starting with zero. Use the index we can access and modify the items in a list. List index start from 0. So if there are n elements in a list then index will be 0 to (n-1).</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="mi">800</span><span class="p">,</span> <span class="mi">900</span><span class="p">]</span>
+
+<span class="n">Access</span> <span class="nb">all</span> <span class="n">items</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[:]</span>
+<span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="mi">800</span><span class="p">,</span> <span class="mi">900</span><span class="p">]</span>
+
+<span class="n">Access</span> <span class="mi">5</span><span class="n">th</span> <span class="n">items</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">500</span><span class="p">]</span>
+
+<span class="n">Slice</span> <span class="n">first</span> <span class="mi">3</span> <span class="n">items</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">]</span>
+
+<span class="n">Slice</span> <span class="n">last</span> <span class="mi">3</span> <span class="n">items</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+<span class="p">[</span><span class="mi">700</span><span class="p">,</span> <span class="mi">800</span><span class="p">,</span> <span class="mi">900</span><span class="p">]</span>
+
+<span class="n">Slice</span> <span class="n">every</span> <span class="mi">2</span><span class="n">nd</span> <span class="n">items</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="mi">900</span><span class="p">]</span>
+
+<span class="n">Slice</span> <span class="n">every</span> <span class="mi">4</span><span class="n">th</span> <span class="n">items</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[::</span><span class="mi">4</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">900</span><span class="p">]</span>
+
+<span class="n">Slice</span> <span class="n">every</span> <span class="mi">3</span><span class="n">rd</span> <span class="n">items</span> <span class="n">starting</span> <span class="k">from</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">200</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">800</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Insert Lists Items</h3>
+
+<p>Lists in Python are mutable. It is possible to insert new items to an existing list.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">Append</span> <span class="n">new</span> <span class="n">items</span> <span class="n">to</span> <span class="n">the</span> <span class="n">end</span> <span class="n">of</span> <span class="n">the</span> <span class="nb">list</span><span class="o">.</span> <span class="n">Append</span> <span class="n">adds</span> <span class="n">new</span> <span class="n">items</span> <span class="n">to</span> <span class="n">the</span> <span class="n">end</span><span class="p">,</span> <span class="n">use</span> <span class="n">Insert</span> <span class="n">to</span> <span class="n">add</span> <span class="n">new</span> <span class="n">items</span> <span class="n">at</span> <span class="n">a</span> <span class="n">specific</span> <span class="n">index</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="n">Add</span> <span class="mi">2</span> <span class="n">lists</span> <span class="n">to</span> <span class="n">create</span> <span class="n">a</span> <span class="n">new</span> <span class="nb">list</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span> <span class="o">=</span> <span class="n">lst</span> <span class="o">+</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="n">Multiply</span> <span class="n">lists</span><span class="o">.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span> <span class="o">=</span> <span class="n">lst</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="n">Insert</span> <span class="n">a</span> <span class="n">new</span> <span class="n">item</span> <span class="n">at</span> <span class="n">specific</span> <span class="n">index</span> <span class="n">position</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Update Lists Items</h3>
+
+<p>After defining a list, it is possible to update the individual items in a list.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">300</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">500</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3000</span><span class="p">,</span><span class="mi">4000</span><span class="p">,</span><span class="mi">5000</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="mi">4000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="mi">500</span><span class="p">]</span>
+
+
+<span class="n">Check</span> <span class="n">the</span> <span class="n">index</span> <span class="n">of</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">item</span> <span class="ow">and</span> <span class="n">change</span> <span class="n">its</span> <span class="n">value</span><span class="o">.</span> <span class="n">If</span> <span class="n">the</span> <span class="n">item</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">found</span> <span class="n">then</span> <span class="nb">ValueError</span> <span class="n">will</span> <span class="n">be</span> <span class="n">raised</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3000</span><span class="p">)</span>
+<span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="p">[</span><span class="n">lst</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3000</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">6000</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">6000</span><span class="p">,</span> <span class="mi">4000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="mi">500</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Delete Lists Items</h3>
+
+<p>The pop method removes an item at the index provide. This method will also return the item removed from the list. If an index is not provided, it will by default remove the item at the last index.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">300</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">500</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">valDeleted</span> <span class="o">=</span> <span class="n">lst</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">valDeleted</span>
+<span class="mi">500</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">valDeleted</span> <span class="o">=</span> <span class="n">lst</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">400</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">valDeleted</span>
+<span class="mi">300</span>
+
+<span class="n">Remove</span> <span class="nb">all</span> <span class="n">items</span> <span class="k">from</span> <span class="n">the</span> <span class="nb">list</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[]</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Sort, Reverse and Count List</h3>
+
+<p>The sort method sorts and alters the original list in place. The count method counts the number of times a value occurs in a .</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">1000</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]</span>
+
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span>
+<span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">300</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lst</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="mi">2</span></code></pre></figure>
+
+</div>
+</div>
+
+                </div>
+                <div class="col-xl-2">
+                    
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-lists.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-lists.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-lists.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="https://hashtaggeeks.com"> hashtaggeeks.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+        </div>
+    </main>
+<script src="/assets/vendor/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap-toc.min.js"></script>
+
+</body>
+</html>
