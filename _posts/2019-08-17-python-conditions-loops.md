@@ -13,9 +13,8 @@ short-description: Python is a minimalistic programming language. Python is open
 {%
 include related-post.html
 input = 
-'how-to-install-anaconda-python.html,1. How to install anaconda python|
-python-basics-hello-world.html,2. Python Basics Hello World|
-python-string-operation-formatting,3. Python Strings'
+'python-basics-hello-world.html,1. Python Basics Hello World|
+python-string-operation-formatting,2. Python Strings'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python Conditions and Loops</h1>

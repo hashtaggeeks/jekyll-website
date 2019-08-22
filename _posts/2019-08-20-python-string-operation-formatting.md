@@ -13,9 +13,8 @@ short-description: Python Strings are Arrays. String literals in Python are surr
 {%
 include related-post.html
 input = 
-'how-to-install-anaconda-python.html,1. How to install anaconda python|
-python-basics-hello-world.html,2. Python Basics Hello World|
-python-conditions-loops.html,3. Python Conditions and Loops'
+'python-conditions-loops.html,1. Python Conditions and Loops|
+python-lists.html,2. Python Lists'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python Strings</h1>
@@ -112,11 +111,7 @@ Python String formatting can be done using **str.format()** method or using the 
 'Hello World'
 
 >>> f"Multiply 5*6 = {5*6}"
-'Multiply 5\*6 = 30'
-
->>> name = "John"
->>> f"Upper case name is {name.upper()}"
-'Upper case name is JOHN'
+'Multiply 5*6 = 30'
 
 {% endhighlight %}
 </div>
@@ -222,21 +217,20 @@ f-strings are evaluated at runtime, it supports any valid Python expression or f
 
 >>> i=0
 >>> while i<20:
-...     if i%2==1:
+...     if i%2==0:
 ...         print(f'{" "*i:*^20}')
 ...     i+=1
 ... 
-********* **********
-********   *********
-*******     ********
-******       *******
-*****         ******
-****           *****
-***             ****
-**               ***
-*                 **
-                   *
-
+********************
+*********  *********
+********    ********
+*******      *******
+******        ******
+*****          *****
+****            ****
+***              ***
+**                **
+*                  *
 
 {% endhighlight %}
 </div>
