@@ -2,7 +2,7 @@
 title: Python Dictionary
 description: Python Dictionary, Python collection, Python data structure, python unordered collection, python collection, python key value, loop dictionary, dictionary methods
 layout: content
-date: 2019-08-21
+date: 2019-08-22
 categories: python
 featured: false 
 image-url: /images/python-dictionary.jpg
@@ -12,7 +12,7 @@ short-description: Python Dictionaries are associative array or hash table that 
 
 {%
 include related-post.html
-input = 'python-lists.html,1. Python Lists'
+input = 'python-lists.html,1. Python Lists|python-tuples.html,2. Python Tuples'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python Dictionary</h1>
