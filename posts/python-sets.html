@@ -1,0 +1,434 @@
+<html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6236497625449277",
+    enable_page_level_ads: true
+  });
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6236497625449277",
+          enable_page_level_ads: true
+     });
+</script>
+<title>
+ Python Sets 
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Python Sets, unordered collection, no index, python data structures, python loops, set loops, set union, set intersect, symmetric_difference(), symmetric_difference_update(),isdisjoint(), issubset()">.
+<meta http-equiv="content-language" content="en">
+<link rel="canonical" href="https://hashtaggeeks.com/posts/python-sets.html">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Sets">
+<meta property="og:url" content="https://hashtaggeeks.com/posts/python-sets.html"> 
+<meta property="og:site_name" content="Python Pandas Tutorial">
+<meta property="article:publisher" content="https://hashtaggeeks.com" />
+<meta property="article:author" content="https://hashtaggeeks.com" />
+<meta property="article:published_time" content="2019-08-22 20:01:20 -0400" />
+<meta property="og:description" content="Python Sets, unordered collection, no index, python data structures, python loops, set loops, set union, set intersect, symmetric_difference(), symmetric_difference_update(),isdisjoint(), issubset()">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Sets">
+<meta name="twitter:description" content="Python Sets, unordered collection, no index, python data structures, python loops, set loops, set union, set intersect, symmetric_difference(), symmetric_difference_update(),isdisjoint(), issubset()">
+<meta name="twitter:domain" content="https://hashtaggeeks.com" />
+<meta name="twitter:image" content="https://hashtaggeeks.com/images/python-sets.jpg" />
+<meta name="twitter:site" content="@hashtaggeeks" />
+<meta name="twitter:creator" content="@hashtaggeeks">
+<!-- site css -->
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/syntax-style.css">
+<link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+
+</head>
+<body class="pt-5" data-spy="scroll">
+    <main role="main">
+        <div class="container-fluid">
+            <header>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand" href="/">HashtagGeeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
+  </div>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-sets.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-sets.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-sets.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
+</header>
+            <br>
+            <div class="row">
+                <div class="col-xl-2 d-none d-lg-block">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>                    
+                <div class="col-xl-8">
+                    <div class="card bg-light">
+<div class="card card-body bg-light">
+<h5 class="card-title"> Related Posts </h5>
+<ul class="nav navbar-nav">
+
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/python-dictionary.html">1. Python Dictionary</a></li>
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/python-tuples.html">2. Python Tuples</a></li>
+
+
+</ul>
+</div>
+</div>
+
+<h1 style="padding-top: 60px; margin-top: -40px;">Python Sets</h1>
+
+<p>Python Sets is used to contain an unordered collection of objects. You cannot access items in a set by referring to an index, since sets are unordered the items has no index. Elements of a set are never duplicated</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span> <span class="o">=</span> <span class="kd">set</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">type</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="kd">class</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="o">&gt;</span></code></pre></figure>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Creating Sets</h3>
+
+<p>Sets are created using the <strong>set()</strong> class or enclosing items inside <strong>{}</strong>. Elements of a set are never duplicated</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">this</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">is</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">this</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">is</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="p">}</span>
+
+<span class="err">#</span> <span class="nx">Note</span> <span class="nx">that</span> <span class="dl">'</span><span class="s1">l</span><span class="dl">'</span> <span class="nx">appears</span> <span class="nx">only</span> <span class="nx">once</span><span class="p">.</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span>  <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello world</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">d</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">w</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">h</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">r</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">e</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">l</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">o</span><span class="dl">'</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Access Items</h3>
+
+<p>Since sets are unordered and non indexed, items cannot be accessed using the index. Loop can be used to access Python set items.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">s</span><span class="p">:</span>
+<span class="p">...</span>     <span class="nx">print</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">...</span> 
+<span class="k">this</span>
+<span class="nx">is</span>
+<span class="nx">python</span>
+<span class="nx">a</span>
+<span class="kd">set</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="dl">'</span><span class="s1">python</span><span class="dl">'</span> <span class="k">in</span> <span class="nx">s</span>
+<span class="nx">True</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Adding Items</h3>
+
+<p>Python set <strong>.add()</strong> method can be used to add new items.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">this</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">is</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">this</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">is</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+To add more than one item to a set <strong>.update()</strong> method can be used</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">update</span><span class="p">([</span><span class="dl">'</span><span class="s1">adding</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">multiple</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">items</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">to</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">this</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">adding</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">to</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">is</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">multiple</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">items</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Deleting Items</h3>
+
+<p>Python Set items can be removed using <strong>.remove()</strong>  or <strong>.discard()</strong> methods. The difference is that if the item is not found <strong>.remove()</strong> will raise exception.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">this</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">adding</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">to</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">is</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">multiple</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">items</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="dl">'</span><span class="s1">this</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">adding</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">to</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">is</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">multiple</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">items</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="dl">'</span><span class="s1">this</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">Traceback</span> <span class="p">(</span><span class="nx">most</span> <span class="nx">recent</span> <span class="nx">call</span> <span class="nx">last</span><span class="p">):</span>
+  <span class="nx">File</span> <span class="dl">"</span><span class="s2">&lt;stdin&gt;</span><span class="dl">"</span><span class="p">,</span> <span class="nx">line</span> <span class="mi">1</span><span class="p">,</span> <span class="k">in</span> <span class="o">&lt;</span><span class="nx">module</span><span class="o">&gt;</span>
+<span class="nx">KeyError</span><span class="p">:</span> <span class="dl">'</span><span class="s1">this</span><span class="dl">'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">discard</span><span class="p">(</span><span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">adding</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">to</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">is</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">multiple</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">items</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">set</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">discard</span><span class="p">(</span><span class="dl">'</span><span class="s1">python</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+<strong>.clear()</strong> method will remove all items from the set and empty set will remain.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">clear</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s</span>
+<span class="kd">set</span><span class="p">()</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Union Sets</h3>
+
+<p>Python set <strong>.union()</strong> method can be used to union 2 or more sets</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">12345</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234567890</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s3</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234hello</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span><span class="p">.</span><span class="nx">union</span><span class="p">(</span><span class="nx">s2</span><span class="p">,</span><span class="nx">s3</span><span class="p">)</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">7</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">8</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">h</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">e</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">9</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">l</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">o</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">5</span><span class="dl">'</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">123456</span><span class="dl">'</span><span class="p">).</span><span class="nx">union</span><span class="p">(</span><span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234567890</span><span class="dl">'</span><span class="p">))</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">8</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">7</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">9</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">5</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">123456</span><span class="dl">'</span><span class="p">).</span><span class="nx">union</span><span class="p">(</span><span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234567890</span><span class="dl">'</span><span class="p">),</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello123456</span><span class="dl">'</span><span class="p">))</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">8</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">7</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">h</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">e</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">9</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">l</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">o</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">5</span><span class="dl">'</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Intersect Sets</h3>
+
+<p>Python set <strong>.intersection()</strong> method can be used to intersect 2 or more sets</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">12345</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234567890</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s3</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234hello</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span><span class="p">.</span><span class="nx">intersection</span><span class="p">(</span><span class="nx">s2</span><span class="p">,</span><span class="nx">s3</span><span class="p">)</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">123456</span><span class="dl">'</span><span class="p">).</span><span class="nx">union</span><span class="p">(</span><span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234567890</span><span class="dl">'</span><span class="p">))</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">8</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">7</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">9</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">5</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">123456</span><span class="dl">'</span><span class="p">).</span><span class="nx">union</span><span class="p">(</span><span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234567890</span><span class="dl">'</span><span class="p">),</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello123456</span><span class="dl">'</span><span class="p">))</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">8</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">7</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">h</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">e</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">9</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">l</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">o</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">5</span><span class="dl">'</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Python set <strong>.intersection_update()</strong> method can be used to intersect 2 or more sets and remove the items in the set that are not present in the set.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">5</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">7</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">8</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">9</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">5</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span><span class="p">.</span><span class="nx">intersection_update</span><span class="p">(</span><span class="nx">s1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">5</span><span class="dl">'</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Difference Sets</h3>
+
+<p>Python set <strong>.difference()</strong> method can be used to find difference between 2 or more sets</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">12345</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234567890</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s3</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234hello</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span><span class="p">.</span><span class="nx">difference</span><span class="p">(</span><span class="nx">s1</span><span class="p">)</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">7</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">8</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">9</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s3</span><span class="p">.</span><span class="nx">difference</span><span class="p">(</span><span class="nx">s2</span><span class="p">)</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">e</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">h</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">l</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">o</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> </code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Python set <strong>.difference_update()</strong> method can be used to removes the items in this set that are also included in another, specified set</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">12345</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234567890</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s3</span> <span class="o">=</span> <span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">1234hello</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">7</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">8</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">3</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">9</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">5</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span><span class="p">.</span><span class="nx">difference_update</span><span class="p">(</span><span class="nx">s1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">7</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">8</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">9</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Symmetric Difference Sets</h3>
+
+<p>Python set <strong>.symmetric_difference()</strong> method can be used to find symmetric difference between 2 sets</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span><span class="o">=</span><span class="p">{</span><span class="dl">'</span><span class="s1">red</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">blue</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span><span class="o">=</span><span class="p">{</span><span class="dl">'</span><span class="s1">red</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">green</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">orange</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s3</span><span class="o">=</span><span class="p">{</span><span class="dl">'</span><span class="s1">green</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">black</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">white</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s1</span><span class="p">.</span><span class="nx">symmetric_difference</span><span class="p">(</span><span class="nx">s2</span><span class="p">)</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">green</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">orange</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">blue</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">s2</span><span class="p">.</span><span class="nx">symmetric_difference</span><span class="p">(</span><span class="nx">s3</span><span class="p">)</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">orange</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">red</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">black</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">white</span><span class="dl">'</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+
+                </div>
+                <div class="col-xl-2">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- desktop-sidebar -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6236497625449277"
+                         data-ad-slot="5428486735"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-sets.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-sets.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-sets.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="https://hashtaggeeks.com"> hashtaggeeks.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+        </div>
+    </main>
+<script src="/assets/vendor/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap-toc.min.js"></script>
+
+</body>
+</html>
