@@ -7,18 +7,18 @@ categories: python
 featured: false 
 image-url: /images/python-lists.jpg
 alt-img: Python Lists
-short-description: Python lists are object that represents an ordered set of objects. A list can hold any Python object, the elements of a list do not all have to be of the same type. Pythion list is similar to a string, except a string can hold only characters
+short-description: Python lists are object that represents an ordered set of objects. A list can hold any Python object, the elements of a list do not all have to be of the same type. Python list is similar to a string, except a string can hold only characters
 ---
 
 {%
 include related-post.html
 input = 
-'python-string-operation-formatting.html,1. Python Strings'
+'python-string-operation-formatting.html,1. Python Strings|python-dictionary.html, 2. Python Dictionary'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python Lists</h1>
 
-Python lists are object that represents an ordered set of objects. A list can hold any Python object, the elements of a list do not all have to be of the same type. Pythion list is similar to a string, except a string can hold only characters.
+Python lists are object that represents an ordered set of objects. A list can hold any Python object, the elements of a list do not all have to be of the same type. Python list is similar to a string, except a string can hold only characters.
 
 
 {% highlight Javascript %}
