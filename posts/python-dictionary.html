@@ -1,0 +1,614 @@
+<html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6236497625449277",
+    enable_page_level_ads: true
+  });
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6236497625449277",
+          enable_page_level_ads: true
+     });
+</script>
+<title>
+ Python Dictionary 
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Python Dictionary, Python collection, Python data structure, python unordered collection, python collection, python key value, loop dictionary, dictionary methods">.
+<meta http-equiv="content-language" content="en">
+<link rel="canonical" href="https://hashtaggeeks.com/posts/python-dictionary.html">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Dictionary">
+<meta property="og:url" content="https://hashtaggeeks.com/posts/python-dictionary.html"> 
+<meta property="og:site_name" content="Python Pandas Tutorial">
+<meta property="article:publisher" content="https://hashtaggeeks.com" />
+<meta property="article:author" content="https://hashtaggeeks.com" />
+<meta property="article:published_time" content="2019-08-21 00:00:00 -0400" />
+<meta property="og:description" content="Python Dictionary, Python collection, Python data structure, python unordered collection, python collection, python key value, loop dictionary, dictionary methods">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Dictionary">
+<meta name="twitter:description" content="Python Dictionary, Python collection, Python data structure, python unordered collection, python collection, python key value, loop dictionary, dictionary methods">
+<meta name="twitter:domain" content="https://hashtaggeeks.com" />
+<meta name="twitter:image" content="https://hashtaggeeks.com/images/python-dictionary.jpg" />
+<meta name="twitter:site" content="@hashtaggeeks" />
+<meta name="twitter:creator" content="@hashtaggeeks">
+<!-- site css -->
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/syntax-style.css">
+<link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+
+</head>
+<body class="pt-5" data-spy="scroll">
+    <main role="main">
+        <div class="container-fluid">
+            <header>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand" href="/">HashtagGeeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
+  </div>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-dictionary.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-dictionary.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-dictionary.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
+</header>
+            <br>
+            <div class="row">
+                <div class="col-xl-2 d-none d-lg-block">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>                    
+                <div class="col-xl-8">
+                    <div class="card bg-light">
+<div class="card card-body bg-light">
+<h5 class="card-title"> Related Posts </h5>
+<ul class="nav navbar-nav">
+
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/python-lists.html">1. Python Lists</a></li>
+
+
+</ul>
+</div>
+</div>
+
+<h1 style="padding-top: 60px; margin-top: -40px;">Python Dictionary</h1>
+
+<p>Python Dictionaries are associative array or hash table that contains objects indexed by keys. Most common type of keys are Strings, many other Python objects, including numbers and tuples can be used as keys. Dictionaries are also used as a container for performing fast lookups on unordered data.</p>
+
+<p>Dictionaries are mutable, dictionary elements can be added or removed as needed. Python dictionary can contain another dictionary. The main difference between list and dictionary is lists are ordered sets of objects, whereas dictionaries are unordered sets.</p>
+
+<p>Keys of a Dictionary must be unique and of immutable data type such as Strings, Integers and tuples, but the key-values can be repeated and be of any type.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">type</span><span class="p">(</span><span class="nx">emp</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="kd">class</span> <span class="dl">'</span><span class="s1">dict</span><span class="dl">'</span><span class="o">&gt;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="o">=</span><span class="nx">dict</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">type</span><span class="p">(</span><span class="nx">emp</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="kd">class</span> <span class="dl">'</span><span class="s1">dict</span><span class="dl">'</span><span class="o">&gt;</span></code></pre></figure>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Creating Dictionary</h3>
+
+<p>Creating dictionary with values, this can be one by enclosing the values in <strong>{}</strong></p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span><span class="mi">2000</span><span class="p">,</span> <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span> <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="nx">dict</span><span class="p">({</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span><span class="mi">2000</span><span class="p">,</span> <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">})</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span> <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="nx">dict</span><span class="p">([(</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">),</span> <span class="p">(</span><span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">,</span><span class="mi">23</span><span class="p">),</span> <span class="p">(</span><span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">,</span><span class="mi">2000</span><span class="p">),</span> <span class="p">(</span><span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">)])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span> <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="nx">dict</span><span class="p">(</span><span class="nx">name</span><span class="o">=</span><span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span> <span class="nx">age</span><span class="o">=</span><span class="mi">23</span><span class="p">,</span> <span class="nx">sal</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span> <span class="nx">comm</span><span class="o">=</span> <span class="mf">2.3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span> <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span><span class="p">{}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">]</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">John</span><span class="dl">'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">23</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span> <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Accessing Items</h3>
+
+<p>Key-indexing operator is used to access the dictionary values. Referring to its key name, inside square brackets values can be retrieved. The .get() method can also be used to access the dictionary elements.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="o">=</span><span class="p">{</span>
+<span class="p">...</span>     <span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>     <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span>
+<span class="p">...</span>     <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span><span class="mi">2000</span><span class="p">,</span>
+<span class="p">...</span>     <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span><span class="mf">2.3</span><span class="p">,</span>
+<span class="p">...</span>     <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">:[</span>
+<span class="p">...</span>         <span class="p">{</span>
+<span class="p">...</span>             <span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span><span class="p">,</span>        
+<span class="p">...</span>             <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span>
+<span class="p">...</span>         <span class="p">},</span>
+<span class="p">...</span>         <span class="p">{</span>
+<span class="p">...</span>             <span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">666-4366 Lacinia Avenue</span><span class="dl">'</span><span class="p">,</span>        
+<span class="p">...</span>             <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">Idaho Falls Ohio 19253</span><span class="dl">'</span>            
+<span class="p">...</span>         <span class="p">}</span>
+<span class="p">...</span>     <span class="p">]</span>
+<span class="p">...</span> <span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">)</span>
+<span class="dl">'</span><span class="s1">John</span><span class="dl">'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">]</span>
+<span class="dl">'</span><span class="s1">John</span><span class="dl">'</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+To access list items inside a dictionary, use the list index.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">]</span>
+<span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">]</span>
+<span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Adding Items</h3>
+
+<p>Adding a new element to Python dictionary can be done by defining a value along with new key. While adding a value, if the key value already exists, the value gets updated otherwise a new Key with the value is added to the Dictionary</p>
+
+<p>Multiple elements can be added using the <strong>.update()</strong> method</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">dept</span><span class="dl">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">30</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span><span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span><span class="mi">1145</span><span class="p">})</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">:</span> <span class="p">[{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">666-4366 Lacinia Avenue</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Idaho Falls Ohio 19253</span><span class="dl">'</span><span class="p">}],</span>
+ <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">1145</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+<p><br /></p>
+
+<p>Adding new address to the list inside the emp dictionary using the <strong>.append()</strong> list method.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">new_address</span><span class="o">=</span><span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">935-1670 Neque. St.</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">Centennial Delaware 48432</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">].</span><span class="nx">append</span><span class="p">(</span><span class="nx">new_address</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">:</span> <span class="p">[{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">666-4366 Lacinia Avenue</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Idaho Falls Ohio 19253</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">935-1670 Neque. St.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Centennial Delaware 48432</span><span class="dl">'</span><span class="p">}],</span>
+ <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">1145</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Modifying Items</h3>
+
+<p>Python dictionary values can be modifies by assigning new values to the key. Dictionary method <strong>.update()</strong> can also be used to modify multiple values.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">]</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span><span class="mi">3500</span><span class="p">,</span><span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span><span class="mi">4263</span><span class="p">})</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">3500</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">:</span> <span class="p">[{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">666-4366 Lacinia Avenue</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Idaho Falls Ohio 19253</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">935-1670 Neque. St.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Centennial Delaware 48432</span><span class="dl">'</span><span class="p">}],</span>
+ <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">4263</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+<p><br /></p>
+
+<p>Modify the list item inside dictionary</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">]</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">414-7533 Non Rd.</span><span class="dl">'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">]</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Miami Beach North Dakota 58563</span><span class="dl">'</span>
+
+<span class="nx">or</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">414-7533 Non Rd.</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">Miami Beach North Dakota 58563</span><span class="dl">'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">3500</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">:</span> <span class="p">[{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">666-4366 Lacinia Avenue</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Idaho Falls Ohio 19253</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">414-7533 Non Rd.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Miami Beach North Dakota 58563</span><span class="dl">'</span><span class="p">}],</span>
+ <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">4263</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Deleting Items</h3>
+
+<p>Python dictionary deletion can be done in multiple ways. Using <strong>del</strong> keyword, specific values from a dictionary or the whole dictionary can be deleted. Dictionary methods <strong>.pop()</strong> or <strong>.popitems()</strong>.</p>
+
+<p>All the items from a dictionary can be deleted at once by using <strong>.clear()</strong> method</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">3500</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">:</span> <span class="p">[{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>    <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span><span class="p">},</span>
+<span class="p">...</span>   <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">666-4366 Lacinia Avenue</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>    <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Idaho Falls Ohio 19253</span><span class="dl">'</span><span class="p">},</span>
+<span class="p">...</span>   <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">935-1670 Neque. St.</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>    <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Centennial Delaware 48432</span><span class="dl">'</span><span class="p">}],</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">4263</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">del</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">pop</span><span class="p">(</span><span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">)</span>
+<span class="mi">23</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">popitem</span><span class="p">()</span>
+<span class="p">(</span><span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">,</span> <span class="mi">4263</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">:</span> <span class="p">[{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">666-4366 Lacinia Avenue</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Idaho Falls Ohio 19253</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">935-1670 Neque. St.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Centennial Delaware 48432</span><span class="dl">'</span><span class="p">}],</span>
+ <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+<p><br /></p>
+
+<p>Delete the nested dictionary list item keys.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">del</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">:</span> <span class="p">[{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">666-4366 Lacinia Avenue</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Idaho Falls Ohio 19253</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">935-1670 Neque. St.</span><span class="dl">'</span><span class="p">}],</span>
+ <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">del</span> <span class="nx">emp</span><span class="p">[</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">:</span> <span class="p">[{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">5037 Diam Rd.</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Daly City Ohio 90255</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="dl">'</span><span class="s1">address-1</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">666-4366 Lacinia Avenue</span><span class="dl">'</span><span class="p">,</span>
+   <span class="dl">'</span><span class="s1">address-2</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Idaho Falls Ohio 19253</span><span class="dl">'</span><span class="p">}],</span>
+ <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span></code></pre></figure>
+
+</div>
+</div>
+<p><br /></p>
+
+<p>Deleting all elements of the dictionary</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">clear</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span>
+<span class="p">{}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">type</span><span class="p">(</span><span class="nx">emp</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="kd">class</span> <span class="dl">'</span><span class="s1">dict</span><span class="dl">'</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">len</span><span class="p">(</span><span class="nx">emp</span><span class="p">)</span>
+<span class="mi">0</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Loop Dictionary</h3>
+
+<p>Using the for loop Python dictionary keys and values can be access. Inside for loop Python dictionary returns the keys.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">3500</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">4263</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">emp</span><span class="p">:</span>
+<span class="p">...</span>     <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="dl">'</span><span class="s1">{i} </span><span class="se">\t</span><span class="s1"> {emp[i]}</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">...</span> 
+<span class="nx">name</span>     <span class="nx">George</span>
+<span class="nx">age</span>      <span class="mi">23</span>
+<span class="nx">sal</span>      <span class="mi">3500</span>
+<span class="nx">comm</span>     <span class="mf">2.3</span>
+<span class="nx">deptno</span>   <span class="mi">30</span>
+<span class="nx">mgr</span>      <span class="mi">4263</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Using the .items() method keys dictionary will return the keys and values</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">3500</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">4263</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="p">(</span><span class="nx">key</span><span class="p">,</span><span class="nx">val</span><span class="p">)</span> <span class="k">in</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">items</span><span class="p">():</span>
+<span class="p">...</span>     <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="dl">'</span><span class="s1">{key} </span><span class="se">\t</span><span class="s1"> {val}</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">...</span> 
+<span class="nx">name</span>     <span class="nx">George</span>
+<span class="nx">age</span>      <span class="mi">23</span>
+<span class="nx">sal</span>      <span class="mi">3500</span>
+<span class="nx">comm</span>     <span class="mf">2.3</span>
+<span class="nx">deptno</span>   <span class="mi">30</span>
+<span class="nx">mgr</span>      <span class="mi">4263</span></code></pre></figure>
+
+</div>
+</div>
+<p><br /></p>
+
+<p>Using the <strong>.keys()</strong> and <strong>.values()</strong> method dictionary will return list of keys and values. This can be used to loop the dictionary.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">3500</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">4263</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="nx">k</span> <span class="k">in</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">keys</span><span class="p">():</span>
+<span class="p">...</span>     <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="dl">'</span><span class="s1">{k}</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">...</span> 
+<span class="nx">name</span>
+<span class="nx">age</span>
+<span class="nx">sal</span>
+<span class="nx">comm</span>
+<span class="nx">deptno</span>
+<span class="nx">mgr</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">3500</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">4263</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="nx">k</span> <span class="k">in</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">values</span><span class="p">():</span>
+<span class="p">...</span>     <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="dl">'</span><span class="s1">{k}</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">...</span> 
+<span class="nx">George</span>
+<span class="mi">23</span>
+<span class="mi">3500</span>
+<span class="mf">2.3</span>
+<span class="mi">30</span>
+<span class="mi">4263</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Dictionary Methods</h3>
+
+<p>Use the <strong>len</strong> method to count the elements in the dictionary. The <strong>in</strong> condition can be used to check if a key exists in the dictionary.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">George</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">sal</span><span class="dl">'</span><span class="p">:</span> <span class="mi">3500</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">comm</span><span class="dl">'</span><span class="p">:</span> <span class="mf">2.3</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">deptno</span><span class="dl">'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+<span class="p">...</span>  <span class="dl">'</span><span class="s1">mgr</span><span class="dl">'</span><span class="p">:</span> <span class="mi">4263</span><span class="p">}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">len</span><span class="p">(</span><span class="nx">emp</span><span class="p">)</span>
+<span class="mi">6</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span> <span class="k">in</span> <span class="nx">emp</span><span class="p">:</span>
+<span class="p">...</span>     <span class="nx">print</span><span class="p">(</span><span class="dl">'</span><span class="s1">Key age exists in dictionary emp</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">...</span> <span class="k">else</span><span class="p">:</span>
+<span class="p">...</span>     <span class="nx">print</span><span class="p">(</span><span class="dl">'</span><span class="s1">Key age exists in dictionary emp</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">...</span> 
+<span class="nx">Key</span> <span class="nx">age</span> <span class="nx">exists</span> <span class="k">in</span> <span class="nx">dictionary</span> <span class="nx">emp</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span> <span class="k">in</span> <span class="nx">emp</span><span class="p">:</span>
+<span class="p">...</span>     <span class="nx">print</span><span class="p">(</span><span class="dl">'</span><span class="s1">Key address exists in dictionary emp</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">...</span> <span class="k">else</span><span class="p">:</span>
+<span class="p">...</span>     <span class="nx">print</span><span class="p">(</span><span class="dl">'</span><span class="s1">Key address does not exists in dictionary emp</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">...</span> 
+<span class="nx">Key</span> <span class="nx">address</span> <span class="nx">does</span> <span class="nx">not</span> <span class="nx">exists</span> <span class="k">in</span> <span class="nx">dictionary</span> <span class="nx">emp</span></code></pre></figure>
+
+</div>
+</div>
+
+                </div>
+                <div class="col-xl-2">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- desktop-sidebar -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6236497625449277"
+                         data-ad-slot="5428486735"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-dictionary.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-dictionary.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-dictionary.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="https://hashtaggeeks.com"> hashtaggeeks.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+        </div>
+    </main>
+<script src="/assets/vendor/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap-toc.min.js"></script>
+
+</body>
+</html>
