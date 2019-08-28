@@ -1,0 +1,448 @@
+<html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6236497625449277",
+    enable_page_level_ads: true
+  });
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6236497625449277",
+          enable_page_level_ads: true
+     });
+</script>
+<title>
+ Python DateTime 
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Python Tuples, Python collection, Python data structure, python lists, tuples are immutable, indexing, slicing, concatenation">.
+<meta http-equiv="content-language" content="en">
+<link rel="canonical" href="https://hashtaggeeks.com/posts/python-date-time.html">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python DateTime">
+<meta property="og:url" content="https://hashtaggeeks.com/posts/python-date-time.html"> 
+<meta property="og:site_name" content="Python Pandas Tutorial">
+<meta property="article:publisher" content="https://hashtaggeeks.com" />
+<meta property="article:author" content="https://hashtaggeeks.com" />
+<meta property="article:published_time" content="2019-08-23 21:01:20 -0400" />
+<meta property="og:description" content="Python Tuples, Python collection, Python data structure, python lists, tuples are immutable, indexing, slicing, concatenation">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python DateTime">
+<meta name="twitter:description" content="Python Tuples, Python collection, Python data structure, python lists, tuples are immutable, indexing, slicing, concatenation">
+<meta name="twitter:domain" content="https://hashtaggeeks.com" />
+<meta name="twitter:image" content="https://hashtaggeeks.com/images/python-date-time.jpg" />
+<meta name="twitter:site" content="@hashtaggeeks" />
+<meta name="twitter:creator" content="@hashtaggeeks">
+<!-- site css -->
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/syntax-style.css">
+<link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+
+</head>
+<body class="pt-5" data-spy="scroll">
+    <main role="main">
+        <div class="container-fluid">
+            <header>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand" href="/">HashtagGeeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
+  </div>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-date-time.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-date-time.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-date-time.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
+</header>
+            <br>
+            <div class="row">
+                <div class="col-xl-2 d-none d-lg-block">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>                    
+                <div class="col-xl-8">
+                    <div class="card bg-light">
+<div class="card card-body bg-light">
+<h5 class="card-title"> Related Posts </h5>
+<ul class="nav navbar-nav">
+
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/python-tuples.html">1. Python Tuples</a></li>
+
+
+</ul>
+</div>
+</div>
+
+<h1 style="padding-top: 60px; margin-top: -40px;">Python DateTime</h1>
+
+<p>The datetime module supplies classes for manipulating dates and times in both simple and complex ways. While date and time arithmetic is supported, the focus of the implementation is on efficient attribute extraction for output formatting and manipulation</p>
+
+<p>To work with datatime in Pyhton, datatime module needs to be imported</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="k">import</span> <span class="nx">datetime</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">type</span><span class="p">(</span><span class="nx">datetime</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="kd">class</span> <span class="dl">'</span><span class="s1">module</span><span class="dl">'</span><span class="o">&gt;</span></code></pre></figure>
+
+<h3 style="padding-top: 60px; margin-top: -40px;"> Current Date and Time</h3>
+
+<p>Current date and time can be retrieved from datetime modules <strong>date</strong> class or <strong>date</strong> class or <strong>datetime</strong> class.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="k">import</span> <span class="nx">datetime</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varDate</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">date</span><span class="p">.</span><span class="nx">today</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varDateTime</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">datetime</span><span class="p">.</span><span class="nx">today</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varDate</span><span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varDateTime</span><span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span> <span class="mi">10</span><span class="p">:</span><span class="mi">07</span><span class="p">:</span><span class="mf">35.630548</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Print todays Year, Month, Day, Hour, Minute and Seconds.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">varDate</span><span class="p">.</span><span class="nx">year</span>
+<span class="mi">2019</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varDate</span><span class="p">.</span><span class="nx">month</span>
+<span class="mi">8</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varDate</span><span class="p">.</span><span class="nx">day</span>
+<span class="mi">28</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="dl">'</span><span class="s1">Year = {varDate.year} Month = {varDate.month} Day = {varDate.day}</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">Year</span> <span class="o">=</span> <span class="mi">2019</span> <span class="nx">Month</span> <span class="o">=</span> <span class="mi">8</span> <span class="nx">Day</span> <span class="o">=</span> <span class="mi">28</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varDateTime</span><span class="p">.</span><span class="nx">hour</span>
+<span class="mi">10</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varDateTime</span><span class="p">.</span><span class="nx">minute</span>
+<span class="mi">7</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varDateTime</span><span class="p">.</span><span class="nx">second</span>
+<span class="mi">35</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="dl">'''</span><span class="s1">Year = {varDateTime.year} </span><span class="se">\</span><span class="s1">
+... Month = {varDateTime.month} </span><span class="se">\</span><span class="s1">
+... Day = {varDateTime.day} </span><span class="se">\</span><span class="s1">
+... Hour = {varDateTime.hour} </span><span class="se">\</span><span class="s1">
+... Minute= {varDateTime.minute} </span><span class="se">\</span><span class="s1">
+... Second = {varDateTime.second}</span><span class="dl">'''</span><span class="p">)</span>
+<span class="nx">Year</span> <span class="o">=</span> <span class="mi">2019</span> <span class="nx">Month</span> <span class="o">=</span> <span class="mi">8</span> <span class="nx">Day</span> <span class="o">=</span> <span class="mi">28</span> <span class="nx">Hour</span> <span class="o">=</span> <span class="mi">10</span> <span class="nx">Minute</span><span class="o">=</span> <span class="mi">7</span> <span class="nx">Second</span> <span class="o">=</span> <span class="mi">35</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;"> Create Date object </h3>
+
+<p>Date objects can be instantiated from the date class. <strong>datetime.date(year, month, day)</strong></p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="k">import</span> <span class="nx">datetime</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varDt</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varDt</span><span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">from</span> <span class="nx">datetime</span> <span class="k">import</span> <span class="nx">date</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varDt</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varDt</span><span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;"> Create Date object from timestamp</h3>
+
+<p>Date object can also be created from timestamp. Timestamp in linux is the elapsed seconds between 2019-Jan-01 UTC. In shell to find the timestamp use the below code.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">krish</span><span class="p">:</span><span class="err">$</span> <span class="n">date</span> <span class="o">+%</span><span class="n">s</span>
+<span class="mi">1567002907</span></code></pre></figure>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">varDt</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">date</span><span class="p">.</span><span class="nx">fromtimestamp</span><span class="p">(</span><span class="mi">1567002907</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varDt</span><span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;"> Create Time object</h3>
+
+<p>Time object can be created from the time class in datatime module. <strong>datetime.time(hour, minute, second, microsecond)</strong></p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">varTime</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">time</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">51</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varTime</span><span class="p">)</span>
+<span class="mi">10</span><span class="p">:</span><span class="mi">51</span><span class="p">:</span><span class="mi">20</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varTime</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">time</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span><span class="mi">51</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">348756</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varTime</span><span class="p">)</span>
+<span class="mi">21</span><span class="p">:</span><span class="mi">51</span><span class="p">:</span><span class="mf">20.348756</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;"> Create DateTime object</h3>
+
+<p>Datetime object can be created from the datetime class in datatime module. <strong>datetime.datetime(year, month, day, hour, minute, second, microsecond)</strong></p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">varDatetime</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">datetime</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">76375</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varDateTime</span><span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span> <span class="mi">10</span><span class="p">:</span><span class="mi">07</span><span class="p">:</span><span class="mf">35.630548</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;"> Timedelta</h3>
+
+<p>Python timedelta is class available in the datetime module. It is used for expressing the difference between two date, time, or datetime instances to microsecond resolution.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="k">from</span> <span class="nx">datetime</span> <span class="k">import</span> <span class="nx">date</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">from</span> <span class="nx">datetime</span> <span class="k">import</span> <span class="nx">timedelta</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span> <span class="nx">date</span><span class="p">.</span><span class="nx">today</span><span class="p">()</span> <span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span> <span class="nx">date</span><span class="p">.</span><span class="nx">today</span><span class="p">()</span> <span class="o">+</span> <span class="nx">timedelta</span><span class="p">(</span><span class="nx">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">29</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span> <span class="nx">date</span><span class="p">.</span><span class="nx">today</span><span class="p">()</span> <span class="o">+</span> <span class="nx">timedelta</span><span class="p">(</span><span class="nx">days</span><span class="o">=</span><span class="mi">365</span><span class="p">)</span> <span class="p">)</span>
+<span class="mi">2020</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">27</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">from</span> <span class="nx">datetime</span> <span class="k">import</span> <span class="nx">datetime</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span> <span class="nx">datetime</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">38</span><span class="p">)</span> <span class="o">+</span> <span class="nx">timedelta</span><span class="p">(</span><span class="nx">hours</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span> <span class="mi">17</span><span class="p">:</span><span class="mi">38</span><span class="p">:</span><span class="mi">00</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Timedelta can be used to calculate the total seconds of a specif duration. Time delta’s can be added, subtracted, multiplied and divided.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">varTDelta</span> <span class="o">=</span> <span class="nx">timedelta</span><span class="p">(</span><span class="nx">hours</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varTDelta</span><span class="p">.</span><span class="nx">total_seconds</span><span class="p">())</span>
+<span class="mf">36000.0</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varTDelta</span> <span class="o">=</span> <span class="nx">timedelta</span><span class="p">(</span><span class="nx">days</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="nx">hours</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="nx">minutes</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varTDelta</span><span class="p">)</span>
+<span class="mi">5</span> <span class="nx">days</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">00</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varTDelta</span> <span class="o">=</span> <span class="nx">varTDelta</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varTDelta</span><span class="p">)</span>
+<span class="mi">2</span> <span class="nx">days</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">00</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varTDelta</span> <span class="o">=</span> <span class="nx">varTDelta</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varTDelta</span><span class="p">)</span>
+<span class="mi">5</span> <span class="nx">days</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">00</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varTD1</span> <span class="o">=</span> <span class="nx">timedelta</span><span class="p">(</span><span class="nx">days</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="nx">hours</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="nx">minutes</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varTD2</span> <span class="o">=</span> <span class="nx">timedelta</span><span class="p">(</span><span class="nx">days</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="nx">hours</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="nx">minutes</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varTD1</span><span class="p">)</span>
+<span class="mi">5</span> <span class="nx">days</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">00</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varTD2</span><span class="p">)</span>
+<span class="mi">12</span> <span class="nx">days</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">00</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varTD1</span> <span class="o">+</span> <span class="nx">varTD2</span><span class="p">)</span>
+<span class="mi">17</span> <span class="nx">days</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">40</span><span class="p">:</span><span class="mi">00</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varT1</span> <span class="o">=</span> <span class="nx">timedelta</span><span class="p">(</span><span class="nx">seconds</span> <span class="o">=</span> <span class="mi">55</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">varT2</span> <span class="o">=</span> <span class="nx">timedelta</span><span class="p">(</span><span class="nx">seconds</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varT1</span> <span class="o">-</span> <span class="nx">varT2</span><span class="p">)</span>
+<span class="mi">0</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">45</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">varT2</span> <span class="o">-</span> <span class="nx">varT1</span><span class="p">)</span>
+<span class="o">-</span><span class="mi">1</span> <span class="nx">day</span><span class="p">,</span> <span class="mi">23</span><span class="p">:</span><span class="mi">59</span><span class="p">:</span><span class="mi">15</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;"> Python format datetime </h3>
+
+<p>Python has <strong>strftime()</strong> methods to format date and time. The <strong>strptime()</strong> method creates a datetime object from a given string (representing date and time).</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">curDate</span><span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">today</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">curDate</span>
+<span class="nx">datetime</span><span class="p">.</span><span class="nx">datetime</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">825268</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">curDate</span><span class="p">.</span><span class="nx">strftime</span><span class="p">(</span><span class="nx">f</span><span class="dl">'''</span><span class="s1">
+... ShortYear     = %y 
+... LongYear      = %Y 
+... Month         = %m
+... ShortMonth    = %b
+... LongMonth     = %B
+... WeekDayOfYear = %W
+... WeekDayofWeek = %w
+... DayOfYear     = %j
+... DayOfMonth    = %d
+... Minutes       = %M
+... Hour          = %H
+... Seconds       = %S
+... Microseconds  = %f
+... AM/PM         = %p
+... </span><span class="dl">'''</span><span class="p">))</span>
+
+<span class="nx">ShortYear</span>     <span class="o">=</span> <span class="mi">19</span> 
+<span class="nx">LongYear</span>      <span class="o">=</span> <span class="mi">2019</span> 
+<span class="nx">Month</span>         <span class="o">=</span> <span class="mi">08</span>
+<span class="nx">ShortMonth</span>    <span class="o">=</span> <span class="nx">Aug</span>
+<span class="nx">LongMonth</span>     <span class="o">=</span> <span class="nx">August</span>
+<span class="nx">WeekDayOfYear</span> <span class="o">=</span> <span class="mi">34</span>
+<span class="nx">WeekDayofWeek</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="nx">DayOfYear</span>     <span class="o">=</span> <span class="mi">240</span>
+<span class="nx">DayOfMonth</span>    <span class="o">=</span> <span class="mi">28</span>
+<span class="nx">Minutes</span>       <span class="o">=</span> <span class="mi">38</span>
+<span class="nx">Hour</span>          <span class="o">=</span> <span class="mi">17</span>
+<span class="nx">Seconds</span>       <span class="o">=</span> <span class="mi">59</span>
+<span class="nx">Microseconds</span>  <span class="o">=</span> <span class="mi">825268</span>
+<span class="nx">AM</span><span class="o">/</span><span class="nx">PM</span>         <span class="o">=</span> <span class="nx">PM</span></code></pre></figure>
+
+</div>
+</div>
+<p><br /></p>
+
+<p>Create datatime object using <strong>strptime()</strong></p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">strDate</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">240 August, 2019</span><span class="dl">"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">curDate</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">strptime</span><span class="p">(</span><span class="nx">strDate</span><span class="p">,</span><span class="dl">'</span><span class="s1">%j %B, %Y</span><span class="dl">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">curDate</span><span class="p">)</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">28</span> <span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span></code></pre></figure>
+
+</div>
+</div>
+
+                </div>
+                <div class="col-xl-2">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- desktop-sidebar -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6236497625449277"
+                         data-ad-slot="5428486735"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-date-time.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-date-time.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-date-time.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="https://hashtaggeeks.com"> hashtaggeeks.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+        </div>
+    </main>
+<script src="/assets/vendor/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap-toc.min.js"></script>
+
+</body>
+</html>
