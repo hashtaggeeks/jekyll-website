@@ -1,6 +1,6 @@
 ---
 title: Python DateTime
-description: Python Tuples, Python collection, Python data structure, python lists, tuples are immutable, indexing, slicing, concatenation
+description: Python datetime, Python date, Python time, python timedelta, strptime, strftime, python date difference, python date add
 layout: content
 date: 2019-08-24 01:01:20
 categories: python
