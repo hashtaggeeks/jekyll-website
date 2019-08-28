@@ -12,7 +12,7 @@ short-description: Python tuple is a sequence of immutable Python objects. Tuple
 
 {%
 include related-post.html
-input = 'python-sets.html,1. Python Sets'
+input = 'python-sets.html,1. Python Sets|python-date-time.html, 2. Python DataTime'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python Tuples</h1>
