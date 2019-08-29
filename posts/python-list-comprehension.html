@@ -1,0 +1,385 @@
+<html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6236497625449277",
+    enable_page_level_ads: true
+  });
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6236497625449277",
+          enable_page_level_ads: true
+     });
+</script>
+<title>
+ Python List Comprehension 
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Python List Comprehension, Python list, Python collection, Python Arrays, Python functions, python lambda">.
+<meta http-equiv="content-language" content="en">
+<link rel="canonical" href="https://hashtaggeeks.com/posts/python-list-comprehension.html">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python List Comprehension">
+<meta property="og:url" content="https://hashtaggeeks.com/posts/python-list-comprehension.html"> 
+<meta property="og:site_name" content="Python Pandas Tutorial">
+<meta property="article:publisher" content="https://hashtaggeeks.com" />
+<meta property="article:author" content="https://hashtaggeeks.com" />
+<meta property="article:published_time" content="2019-08-21 00:00:00 -0400" />
+<meta property="og:description" content="Python List Comprehension, Python list, Python collection, Python Arrays, Python functions, python lambda">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python List Comprehension">
+<meta name="twitter:description" content="Python List Comprehension, Python list, Python collection, Python Arrays, Python functions, python lambda">
+<meta name="twitter:domain" content="https://hashtaggeeks.com" />
+<meta name="twitter:image" content="https://hashtaggeeks.com/images/python-list-comprehension.jpg" />
+<meta name="twitter:site" content="@hashtaggeeks" />
+<meta name="twitter:creator" content="@hashtaggeeks">
+<!-- site css -->
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/syntax-style.css">
+<link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+
+</head>
+<body class="pt-5" data-spy="scroll">
+    <main role="main">
+        <div class="container-fluid">
+            <header>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand" href="/">HashtagGeeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
+  </div>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-list-comprehension.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-list-comprehension.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-list-comprehension.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
+</header>
+            <br>
+            <div class="row">
+                <div class="col-xl-2 d-none d-lg-block">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>                    
+                <div class="col-xl-8">
+                    <div class="card bg-light">
+<div class="card card-body bg-light">
+<h5 class="card-title"> Related Posts </h5>
+<ul class="nav navbar-nav">
+
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/python-lists.html">1. Python Lists</a></li>
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/python-dictionary.html"> 2. Python Dictionary</a></li>
+
+
+</ul>
+</div>
+</div>
+
+<h1 style="padding-top: 60px; margin-top: -40px;">Python List Comprehension</h1>
+
+<p>Python lists comprehension is an operation of applying a function to all of the items of a list, creating a new list with the results. During this transformation, elements can be conditionally included in the new list and each element can be transformed as needed. Python list comprehension faster than normal functions and loops for creating list. Every list comprehension can be rewritten in for loop, but every for loop can’t be rewritten in the form of list comprehension.</p>
+
+<p>Basic Syntax</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">[</span><span class="nx">expression</span> <span class="k">for</span> <span class="nx">item1</span> <span class="k">in</span> <span class="nx">iterable1</span> <span class="k">if</span> <span class="nx">condition1</span> 
+            <span class="k">for</span> <span class="nx">item2</span> <span class="k">in</span> <span class="nx">iterable2</span> <span class="k">if</span> <span class="nx">condition2</span> 
+            <span class="p">...</span>
+            <span class="k">for</span> <span class="nx">itemN</span> <span class="k">in</span> <span class="nx">iterableN</span> <span class="k">if</span> <span class="nx">conditionN</span> <span class="p">]</span></code></pre></figure>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Creating List using comprehension</h3>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">[</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">x</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">List Comprehension</h3>
+
+<p>Finding cube of items in a list using for loop</p>
+
+<div class="card">
+<div class="card-body">
+
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">[</span><span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="dl">'</span><span class="s1">{"*"*i:^20}</span><span class="dl">'</span><span class="p">)</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">if</span> <span class="nx">i</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span>
+         <span class="o">*</span>          
+        <span class="o">***</span>         
+       <span class="o">*****</span>        
+      <span class="o">*******</span>       
+     <span class="o">*********</span>      
+    <span class="o">***********</span>     
+   <span class="o">*************</span>    
+  <span class="o">***************</span>   
+ <span class="o">*****************</span>  
+<span class="o">*******************</span> 
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">def</span> <span class="nx">fn_cube</span><span class="p">(</span><span class="nx">x</span><span class="p">):</span>
+<span class="p">...</span>     <span class="k">return</span> <span class="nx">x</span><span class="o">*</span><span class="nx">x</span><span class="o">*</span><span class="nx">x</span>
+<span class="p">...</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">my_list_square</span> <span class="o">=</span><span class="nx">list</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">my_list</span><span class="p">:</span>
+<span class="p">...</span>     <span class="nx">my_list_square</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">fn_cube</span><span class="p">(</span><span class="nx">i</span><span class="p">))</span>
+<span class="p">...</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">my_list_square</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">125</span><span class="p">,</span> <span class="mi">216</span><span class="p">,</span> <span class="mi">343</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">729</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Finding cube of items in a list using comprehension</p>
+
+<div class="card">
+<div class="card-body">
+
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">my_list_square</span> <span class="o">=</span> <span class="p">[</span><span class="nx">fn_cube</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">my_list</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">print</span><span class="p">(</span><span class="nx">my_list_square</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">125</span><span class="p">,</span> <span class="mi">216</span><span class="p">,</span> <span class="mi">343</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">729</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Removing string elements from list</p>
+
+<div class="card">
+<div class="card-body">
+
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mf">23.00</span><span class="p">,</span><span class="dl">'</span><span class="s1">Hello</span><span class="dl">'</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span> <span class="dl">"</span><span class="s2">world</span><span class="dl">"</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">my_list</span> <span class="k">if</span> <span class="nx">type</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="o">!=</span> <span class="nx">str</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mf">23.0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Reversing names of scientists list using comprehension</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">scientists</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">Isaac Newton</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Albert Einstein</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Niels Bohr</span><span class="dl">"</span><span class="p">,</span> 
+<span class="p">...</span>               <span class="dl">"</span><span class="s2">Marie Curie</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">Charles Darwin</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Louis Pasteur</span><span class="dl">"</span><span class="p">,</span> 
+<span class="p">...</span>               <span class="dl">"</span><span class="s2">Galileo Galilei</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Margaret Mead</span><span class="dl">"</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> 
+<span class="p">[</span><span class="dl">'</span><span class="s1">Isaac Newton</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Albert Einstein</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Niels Bohr</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Marie Curie</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Charles Darwin</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Louis Pasteur</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Galileo Galilei</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Margaret Mead</span><span class="dl">'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">reversed_names</span> <span class="o">=</span> <span class="p">[</span><span class="nx">f</span><span class="dl">'</span><span class="s1">{s.split(" ")[1]}, {s.split(" ")[0]}</span><span class="dl">'</span> <span class="k">for</span> <span class="nx">s</span> <span class="k">in</span> <span class="nx">scientists</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">reversed_names</span>
+<span class="p">[</span><span class="dl">'</span><span class="s1">Newton, Isaac</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Einstein, Albert</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Bohr, Niels</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Curie, Marie</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Darwin, Charles</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Pasteur, Louis</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Galilei, Galileo</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">Mead, Margaret</span><span class="dl">'</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Using conditions in list comprehension</h3>
+
+<div class="card">
+<div class="card-body">
+
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">my_even</span> <span class="o">=</span> <span class="p">[</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">my_list</span> <span class="k">if</span> <span class="nx">i</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">my_even</span>
+<span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">my_even_odd</span> <span class="o">=</span> <span class="p">[</span><span class="nx">f</span><span class="dl">'</span><span class="s1">{i} is even</span><span class="dl">'</span> <span class="k">if</span> <span class="nx">i</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span> <span class="k">else</span> <span class="nx">f</span><span class="dl">'</span><span class="s1">{i} is odd</span><span class="dl">'</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">my_list</span> <span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nx">my_even_odd</span>
+<span class="p">[</span><span class="dl">'</span><span class="s1">1 is odd</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">2 is even</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">3 is odd</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">4 is even</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">5 is odd</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">6 is even</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">7 is odd</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">8 is even</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">9 is odd</span><span class="dl">'</span><span class="p">,</span>
+ <span class="dl">'</span><span class="s1">0 is even</span><span class="dl">'</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Nested Comprehensions</h3>
+
+<div class="card">
+<div class="card-body">
+
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="nx">x</span><span class="o">+</span><span class="nx">y</span> <span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">50</span><span class="p">]</span> <span class="k">for</span> <span class="nx">y</span> <span class="k">in</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">60</span><span class="p">]]</span>
+<span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">110</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[[</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">,</span><span class="nx">z</span><span class="p">]</span> <span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="k">for</span> <span class="nx">y</span> <span class="k">in</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="k">for</span> <span class="nx">z</span> <span class="k">in</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]]</span>
+<span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span></code></pre></figure>
+
+
+</div>
+</div>
+<p><br />
+Prime numbers using list comprehension</p>
+<div class="card">
+<div class="card-body">
+
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&gt;&gt;&gt;</span> <span class="nx">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="nx">x</span> <span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">50</span><span class="p">)]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="nx">x</span> <span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">my_list</span> <span class="k">if</span> <span class="nx">x</span><span class="o">&gt;</span><span class="mi">1</span> <span class="nx">and</span> <span class="nx">x</span> <span class="nx">not</span> <span class="k">in</span> <span class="p">[</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">my_list</span> <span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="nx">i</span><span class="p">)</span> <span class="k">if</span> <span class="nx">i</span><span class="o">%</span><span class="nx">x</span><span class="o">==</span><span class="mi">0</span><span class="p">]]</span>
+<span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">47</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> </code></pre></figure>
+
+
+</div>
+</div>
+
+                </div>
+                <div class="col-xl-2">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- desktop-sidebar -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6236497625449277"
+                         data-ad-slot="5428486735"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-list-comprehension.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-list-comprehension.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-list-comprehension.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="https://hashtaggeeks.com"> hashtaggeeks.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+        </div>
+    </main>
+<script src="/assets/vendor/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap-toc.min.js"></script>
+
+</body>
+</html>
