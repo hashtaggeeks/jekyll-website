@@ -13,7 +13,7 @@ short-description: Python lists are object that represents an ordered set of obj
 {%
 include related-post.html
 input = 
-'python-string-operation-formatting.html,1. Python Strings|python-dictionary.html, 2. Python Dictionary'
+'python-string-operation-formatting.html,1. Python Strings|python-list-comprehension.html, 2. Python List Comprehension'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python Lists</h1>

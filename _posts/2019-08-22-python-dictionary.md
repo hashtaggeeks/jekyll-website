@@ -12,7 +12,7 @@ short-description: Python Dictionaries are associative array or hash table that 
 
 {%
 include related-post.html
-input = 'python-lists.html,1. Python Lists|python-tuples.html,2. Python Tuples'
+input = 'python-list-comprehension.html,1. Python List Comprehension|python-tuples.html,2. Python Tuples'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python Dictionary</h1>

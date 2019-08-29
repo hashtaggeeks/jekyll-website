@@ -12,7 +12,7 @@ short-description: Python datetime module supplies classes for manipulating date
 
 {%
 include related-post.html
-input = 'python-tuples.html,1. Python Tuples'
+input = 'python-tuples.html,1. Python Tuples|'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python DateTime</h1>
