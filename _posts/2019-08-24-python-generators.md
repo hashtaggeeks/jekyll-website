@@ -12,7 +12,7 @@ short-description: Python generator is a function that produces a sequence of va
 
 {%
 include related-post.html
-input = 'python-date-time.html,1. Python DateTime'
+input = 'python-date-time.html,1. Python DateTime|python-lambda-functions.html,2. Python lambda Functions'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python Generators</h1>
