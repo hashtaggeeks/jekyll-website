@@ -12,7 +12,7 @@ short-description: Python lambda functions are anonymous in-line function consis
 
 {%
 include related-post.html
-input = 'python-generators.html,1. Python Generators'
+input = 'python-generators.html,1. Python Generators|python-functions.html,2. Python Functions'
 %}
 
 <h1 style="padding-top: 60px; margin-top: -40px;">Python lambda Functions</h1>
@@ -30,7 +30,7 @@ lambda argument: manipulate(argument)
 
 <h3 style="padding-top: 60px; margin-top: -40px;">Creating lambda functions</h3>
 
-An anonymous function is created with the lambda keyword. Using the python interpretor interactive "_" feature the function can be accessed.
+An anonymous function is created with the lambda keyword. Using the python interpretor interactive **"_"** feature the function can be accessed.
 
 <div class="card">
 <div class="card-body">
