@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<url><loc>https://hashtaggeeks.com/posts/python-args-kwargs.html</loc></url>
+
+<url><loc>https://hashtaggeeks.com/posts/python-functions.html</loc></url>
+
 <url><loc>https://hashtaggeeks.com/posts/python-lambda-functions.html</loc></url>
 
 <url><loc>https://hashtaggeeks.com/posts/python-generators.html</loc></url>
@@ -33,9 +37,45 @@
 
 <url><loc>https://hashtaggeeks.com/posts/how-to-install-anaconda-python.html</loc></url>
 
+
+
+
+<url><loc>https://hashtaggeeks.com/about</loc></url>
+
+
+
+
+
+
+
+
+
 <url><loc>https://hashtaggeeks.com/</loc></url>
-  
+
+
+
+
+
+<url><loc>https://hashtaggeeks.com/page/page2/</loc></url>
+
+
+
+
+
 <url><loc>https://hashtaggeeks.com/topics/pandas/</loc></url>
 
+
+
+
+
 <url><loc>https://hashtaggeeks.com/topics/python/</loc></url>
+
+
+
+
+
+<url><loc>https://hashtaggeeks.com/topics/python/page2/</loc></url>
+
+
+
 </urlset>

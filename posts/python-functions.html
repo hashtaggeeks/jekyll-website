@@ -1,0 +1,350 @@
+<html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6236497625449277",
+    enable_page_level_ads: true
+  });
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6236497625449277",
+          enable_page_level_ads: true
+     });
+</script>
+<title>
+ Python Functions 
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Python Functions, python functional programming, scoping rules, closures, decorators, generators, coroutines, oops">.
+<meta http-equiv="content-language" content="en">
+<link rel="canonical" href="https://hashtaggeeks.com/posts/python-functions.html">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Functions">
+<meta property="og:url" content="https://hashtaggeeks.com/posts/python-functions.html"> 
+<meta property="og:site_name" content="Python Pandas Tutorial">
+<meta property="article:publisher" content="https://hashtaggeeks.com" />
+<meta property="article:author" content="https://hashtaggeeks.com" />
+<meta property="article:published_time" content="2019-08-25 20:10:00 -0400" />
+<meta property="og:description" content="Python Functions, python functional programming, scoping rules, closures, decorators, generators, coroutines, oops">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Functions">
+<meta name="twitter:description" content="Python Functions, python functional programming, scoping rules, closures, decorators, generators, coroutines, oops">
+<meta name="twitter:domain" content="https://hashtaggeeks.com" />
+<meta name="twitter:image" content="https://hashtaggeeks.com/images/python-functions.jpg" />
+<meta name="twitter:site" content="@hashtaggeeks" />
+<meta name="twitter:creator" content="@hashtaggeeks">
+<!-- site css -->
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/syntax-style.css">
+<link rel="stylesheet" href="/assets/vendor/bootstrap-toc.min.css"> 
+
+</head>
+<body class="pt-5" data-spy="scroll">
+    <main role="main">
+        <div class="container-fluid">
+            <header>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand" href="/">HashtagGeeks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-xl-none d-lg-none">
+    
+      <li>
+        <a class="nav-link" href="/topics/python/index.html"> Python </a>
+      </li>
+    
+      <li>
+        <a class="nav-link" href="/topics/pandas/index.html"> Pandas </a>
+      </li>
+    
+    </ul>
+  </div>
+    <div class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-functions.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a></li>
+           <li class="nav-item"><a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-functions.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-functions.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+<script>
+
+// When the user scrolls up 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-50px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+-->
+</header>
+            <br>
+            <div class="row">
+                <div class="col-xl-2 d-none d-lg-block">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>                    
+                <div class="col-xl-8">
+                    <div class="card bg-light">
+<div class="card card-body bg-light">
+<h5 class="card-title"> Related Posts </h5>
+<ul class="nav navbar-nav">
+
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/python-lambda-functions.html">1. Python Lambda Functions</a></li>
+
+
+
+
+
+
+<li><a class="nav-link" href="/posts/python-args-kwargs.html">2. Python *args **kwargs</a></li>
+
+
+</ul>
+</div>
+</div>
+
+<h1 style="padding-top: 60px; margin-top: -40px;">Python Functions</h1>
+
+<p>Python, function is a group of related statements that perform a specific task. Functions help break our program into smaller and modular pieces. Functions make program more organized and manageable.</p>
+
+<p>Substantial programs are broken up into functions for better modularity and ease of maintenance. Python makes it easy to define functions but also incorporates a surprising number of features from functional programming languages</p>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Function</h3>
+
+<p>Functions are defined with the <strong>def</strong> statement:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">fn_add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span></code></pre></figure>
+
+<p>The function body is simply a sequence of statements that execute when the function is called. Function is invoked by calling the function followed by a tuple of function arguments. eg: to call the above declared function <strong>fn_add(2,5)</strong>. The order and number of arguments must match those given in the function definition. <strong>TypeError</strong> is raised in case function argument is not matched.</p>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Function Docstring</h3>
+<p>The first string after the function header is called the <strong>docstring</strong> which is short for documentation string. It is used to explain in brief, what a function does. This is optional but is a good programming practice.</p>
+
+<p>This document string can be retrieved by using the <strong>__doc__</strong> attribute of the function.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">fn_add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+       <span class="s">"""This function accepts two arguments 
+       and return the sum of the two arguments"""</span> 
+       <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fn_add</span><span class="o">.</span><span class="n">__doc__</span><span class="p">)</span>
+<span class="n">This</span> <span class="n">function</span> <span class="n">accepts</span> <span class="n">two</span> <span class="n">arguments</span> 
+    <span class="ow">and</span> <span class="k">return</span> <span class="n">the</span> <span class="nb">sum</span> <span class="n">of</span> <span class="n">the</span> <span class="n">two</span> <span class="n">arguments</span></code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Function Arguments</h3>
+
+<p>Function arguments or parameters are used to pass values to function. Python functions can take variable number of arguments, also function can have default arguments, variable arguments and keyword arguments.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">fn_add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">):</span>
+       <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Function <strong>fn_add</strong> accepts three arguments. TypeError will be raised if all three values are not passed.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">fn_add</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">)</span>
+<span class="mi">90</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">fn_add</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span><span class="mf">2.5</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="mf">10.0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">fn_add</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">TypeError</span><span class="p">:</span> <span class="n">fn_add</span><span class="p">()</span> <span class="n">missing</span> <span class="mi">1</span> <span class="n">required</span> <span class="n">positional</span> <span class="n">argument</span><span class="p">:</span> <span class="s">'z'</span>
+<span class="o">&gt;&gt;&gt;</span> </code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Function Default Arguments</h3>
+
+<p>Attach default arguments to function parameters by assigning values in the function definition.</p>
+
+<p>When a function defines a parameter with a default value, that parameter and all the
+parameters that follow are optional. If values are not assigned to all the optional parame-
+ters in the function definition, a SyntaxError exception is raised.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">fn_split</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">delimiter</span><span class="p">)</span>
+<span class="o">...</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="n">fn_split</span><span class="p">(</span><span class="s">"Line1, Line2, Line3, Line4"</span><span class="p">)</span>
+<span class="p">[</span><span class="s">'Line1'</span><span class="p">,</span> <span class="s">' Line2'</span><span class="p">,</span> <span class="s">' Line3'</span><span class="p">,</span> <span class="s">' Line4'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">fn_split</span><span class="p">(</span><span class="s">"a:b:c:d:e:f"</span><span class="p">,</span><span class="s">":"</span><span class="p">)</span>
+<span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">,</span> <span class="s">'d'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'f'</span><span class="p">]</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Default parameter values are always set to the objects that were supplied as values when the function was defined</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">l_delimit</span> <span class="o">=</span> <span class="s">','</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">fn_split</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">delimiter</span> <span class="o">=</span> <span class="n">l_delimit</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">delimiter</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">fn_split</span><span class="p">(</span><span class="s">"a,b,c,d,e,f"</span><span class="p">)</span>
+<span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">,</span> <span class="s">'d'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'f'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span></code></pre></figure>
+
+</div>
+</div>
+<p><br />
+Assigning l_delimit = “#” another values will not change the <strong>delimiter</strong> parameter value assigned to the function <strong>fn_split</strong>.</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">l_delimit</span> <span class="o">=</span> <span class="s">'#'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">fn_split</span><span class="p">(</span><span class="s">"a#b#c#d#e#f"</span><span class="p">)</span>
+<span class="p">[</span><span class="s">'a#b#c#d#e#f'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> </code></pre></figure>
+
+</div>
+</div>
+
+<h3 style="padding-top: 60px; margin-top: -40px;">Function Position and Keyword Arguments</h3>
+
+<p>When we call a function with some values, these values get assigned to the arguments according to their position. Function arguments can also be supplied by explicitly naming each parameter and specifying a value.These are known as keyword arguments</p>
+
+<p>Positional arguments and keyword arguments can appear in the same function call, provided that all the positional arguments appear first, values are provided for all non-optional arguments, and no argument value is defined more than once</p>
+
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">fn_split</span><span class="p">(</span><span class="n">delimiter</span> <span class="o">=</span> <span class="s">"$"</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="s">"hello $ world"</span><span class="p">)</span>
+<span class="p">[</span><span class="s">'hello '</span><span class="p">,</span> <span class="s">' world'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> </code></pre></figure>
+
+</div>
+</div>
+<p><br /></p>
+<div class="card">
+<div class="card-body">
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">fn_split</span><span class="p">(</span><span class="s">"hello $ world"</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">"$"</span><span class="p">)</span>
+<span class="p">[</span><span class="s">'hello '</span><span class="p">,</span> <span class="s">' world'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># keyword arguments should follow positional argument else exception is raised
+</span><span class="o">&gt;&gt;&gt;</span> <span class="n">fn_split</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="s">"hello $ world"</span><span class="p">,</span> <span class="s">"$"</span><span class="p">)</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="nb">SyntaxError</span><span class="p">:</span> <span class="n">positional</span> <span class="n">argument</span> <span class="n">follows</span> <span class="n">keyword</span> <span class="n">argument</span></code></pre></figure>
+
+</div>
+</div>
+
+                </div>
+                <div class="col-xl-2">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- desktop-sidebar -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6236497625449277"
+                         data-ad-slot="5428486735"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://hashtaggeeks.com/posts/python-functions.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/intent/tweet?text=&url=https://hashtaggeeks.com/posts/python-functions.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hashtaggeeks.com/posts/python-functions.html" 
+           class="nav-link"
+           onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+           ><i class="fa fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="https://hashtaggeeks.com"> hashtaggeeks.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+        </div>
+    </main>
+<script src="/assets/vendor/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap-toc.min.js"></script>
+
+</body>
+</html>
